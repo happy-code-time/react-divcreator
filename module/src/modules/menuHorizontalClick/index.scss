@@ -1,0 +1,176 @@
+$animation-time-single-menu-item-horizontal__click: 300ms;
+
+@keyframes show-single-menu-item-horizontal__click-left {
+    from {
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+    }
+  
+    to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+@keyframes hide-single-menu-item-horizontal__click-left {
+    from {
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+  
+    to {
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+}
+
+@keyframes show-single-menu-item-horizontal__click-right {
+    from {
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 100% 50%;
+        -webkit-transform-origin: 100% 50%;
+    }
+  
+    to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+@keyframes hide-single-menu-item-horizontal__click-right {
+    from {
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+  
+    to {
+        transform-origin: 100% 50%;
+        -webkit-transform-origin: 100% 50%;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+}
+/*
+    If component are mounted
+*/
+.react-divcreator-menu--horizontal-click-mounted{
+    .site-left.animation-x {
+        animation: show-single-menu-item-horizontal__click-left $animation-time-single-menu-item-horizontal__click ease-out forwards;
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+    }
+    .site-left.animation-x-back {
+        animation: hide-single-menu-item-horizontal__click-left $animation-time-single-menu-item-horizontal__click ease-out forwards;
+    }
+
+    .site-right.animation-x {
+        animation: show-single-menu-item-horizontal__click-right $animation-time-single-menu-item-horizontal__click ease-out forwards;
+        transition: $animation-time-single-menu-item-horizontal__click;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 100% 50%;
+        -webkit-transform-origin: 100% 50%;
+    }
+    .site-right.animation-x-back {
+        animation: hide-single-menu-item-horizontal__click-right $animation-time-single-menu-item-horizontal__click ease-out forwards;
+    }
+}
+/*
+    Regular
+*/
+.react-divcreator-menu--horizontal-click{
+    width:100%;
+
+    .react-divcreator-menu--horizontal-click__single-link{
+        position: static;
+        z-index:1;
+    }
+    span, a{
+        text-decoration:none;
+        color: rgba(69,69,69,.7);
+        font-size: 1rem;
+    }
+
+    .child{
+        display: block;
+        width: 100%;
+        height:100%;
+        z-index:2;
+        background: transparent;
+        
+        .react-divcreator-menu--horizontal-click__custom-data{
+            position: relative;
+            z-index:-1;
+        }
+    }
+    .parent{
+        width:100%;
+    }
+    .parent-div-has-childs{
+        position: relative;
+    }
+    .child,
+    .child-children {
+        display: block;
+        box-sizing: border-box;
+        padding:5px;
+        min-height:30px;
+        line-height:30px;
+    }
+    .child-children {
+        box-sizing: border-box;
+        padding:0 5px;
+        transition-duration: $animation-time-single-menu-item-horizontal__click;
+        width:100%;
+    }
+
+    .site-right{
+        position: absolute;
+        top: 0;
+        right: 100%;
+        left: auto;
+    }
+    .site-left{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        right: auto;
+    }
+
+    .react-divcreator-menu--horizontal-click__single-text{
+        padding:0 5px;
+    }
+
+    .border{
+        border:1px solid rgba(69,69,69,.1);
+        border-radius:5px;
+        margin:0;
+    }
+    .dots:before{
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        width:1px;
+        height:100%;
+        border-style: none none none dashed; 
+        border-color: rgba(69,69,69,.3);
+        border-width: 2px;
+    }
+}

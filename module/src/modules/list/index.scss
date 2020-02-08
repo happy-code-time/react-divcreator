@@ -1,0 +1,55 @@
+.react-divcreator-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding:10px;
+
+    .react-divcreator-list__header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding:10px;
+    }
+
+    .react-divcreator-list__header--ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .react-divcreator-list__data--ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding:10px;
+    }
+}
+.react-divcreator-list--responsive{
+    .react-divcreator-list__data--ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding:10px;
+
+        .react-divcreator-list__data--ul-li{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .react-divcreator-list__data--ul-li--div {
+                text-align:left;
+                width: 100%;
+            }
+        }
+    }
+}

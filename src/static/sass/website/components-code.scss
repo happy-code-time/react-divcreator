@@ -1,0 +1,109 @@
+@import '../_declarations.scss';
+
+.divcreator-sourcecode-showlines-ul-numbers-li-span{
+    margin-right: 20px;
+    text-align: right;
+    line-height: 30px;
+}
+.divcreator-sourcecode-span {
+	white-space: pre-wrap;
+}
+.divcreator-sourcecode-original-code 
+.divcreator-sourcecode-showlines-ul-data 
+.divcreator-sourcecode-single-line {
+	min-height: 30px;
+	height: auto;
+	overflow: auto;
+}
+.divcreator-sourcecode-original-code 
+.divcreator-sourcecode-showlines-ul-data 
+.divcreator-sourcecode-showlines-ul-li-data {
+	margin-left: -48px;
+	min-height: 30px;
+	height: auto;
+	overflow: auto;
+}
+.divcreator-sourcecode-original-code 
+.divcreator-sourcecode-showlines-ul-numbers {
+	width: 50px;
+}
+.divcreator-sourcecode-original-code .divcreator-sourcecode-showlines-ul-data {
+	width: calc(100% - 50px);
+	overflow: hidden;
+}
+.website--components{
+    .left-menu{
+        @media screen and (min-width: $media-break){
+            display: block;
+        }
+        display: none;
+
+        .header-menu-vertical-click{
+            .parent{
+                i{
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+
+    .content{
+        .right-site{
+            @media screen and (min-width: $media-break){
+                width: calc(100% - #{$menu-width});
+            }
+            width: 100%;
+
+            .box-content--div{
+                margin-top:10px;
+            }
+
+            .react-divcreator-box-boxes 
+            .react-divcreator-box-boxes__data {
+                z-index: 1;
+            }
+
+            .context-of-code-subtitle{
+                margin: 40px 0 16px 20px;
+                font-size: 2rem !important;
+                line-height: 1.17;
+                letter-spacing: 0.00735em;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+            }
+            .context-of-code-main-description{
+                @media screen and (min-width: $media-break){
+                    width: calc(100% - #{$menu-width});
+                }
+                padding: 0 20px;
+                color: rgba(0, 0, 0, 0.87) !important;
+                font-size: 16px !important;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+                width: 100%;
+                line-height:30px;
+            }
+
+            .react-divcreator-articles{
+                p{
+                    margin:0 !important;
+                    padding:0 !important;
+                }
+            }
+            .react-divcreator-articles-click--content-to-toggle,
+            .react-divcreator-articles-imageclick--content-description,
+            .react-divcreator-articles-imageclick--content-title{
+                h1,
+                p{
+                    padding:10px !important;
+                }
+            }
+            .react-divcreator-buttons-navigation__to-bottom-arrow{
+                margin:0 !important;
+                line-height: 50px !important;
+                text-align: center;
+            }
+            .react-divcreator-videobackground .react-divcreator-videobackground--div video{
+                z-index:11;
+            }
+        }
+    }
+}

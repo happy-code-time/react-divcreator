@@ -1,0 +1,192 @@
+$animation-time-accordion: 300ms;
+
+@keyframes show-single-accordion-item {
+    from {
+        transition: $animation-time-accordion;
+        transition-duration: $animation-time-accordion;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 100% 0;
+        -webkit-transform-origin: 100% 0;
+    }
+  
+    to {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+@keyframes hide-single-accordion-item {
+    from {
+        transition: $animation-time-accordion;
+        transition-duration: $animation-time-accordion;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+  
+    to {
+        transform-origin: 100% 0;
+        -webkit-transform-origin: 100% 0;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+}
+@keyframes show-single-accordion-item-height {
+    from {
+        height:0px;
+        min-height:0px;
+        opacity: 0;
+        padding: 0;
+    }
+  
+    to {
+        min-height:10px;
+        height:auto;
+        padding: 0.1em;
+        opacity:1;
+    }
+}
+@keyframes hide-single-accordion-item-height {
+    from {
+        min-height:10px;
+        height:auto;
+        padding: 0.1em;
+        opacity:1;
+    }
+  
+    to {
+        height:0px;
+        min-height:0px;
+        opacity: 0;
+        padding: 0;
+    }
+}
+/*
+    If component are mounted
+*/
+.react-divcreator-accordion-mounted{
+    .animation-y {
+        animation: show-single-accordion-item $animation-time-accordion ease-out forwards;
+        transition: $animation-time-accordion;
+        transition-duration: $animation-time-accordion;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 100% 0;
+        -webkit-transform-origin: 100% 0;
+    }
+    .animation-y-back {
+        animation: hide-single-accordion-item $animation-time-accordion ease-out forwards;
+    }
+
+    .animation-y-height{
+        animation: show-single-accordion-item-height $animation-time-accordion ease-out forwards;
+        transition: $animation-time-accordion;
+        transition-duration: $animation-time-accordion;
+        height:0px;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        transition: font-size 300ms, margin 300ms, padding 300ms, opacity 300ms 300ms;
+    }
+    .animation-y-height-back {
+        animation: hide-single-accordion-item-height $animation-time-accordion ease-out forwards;
+    }
+}
+/*
+    ###########################################################
+    Accordion
+    ###########################################################
+*/
+.react-divcreator-accordion{
+    min-height: 30px;
+    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px;
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height:30px;
+        height:auto;
+        box-sizing: border-box;
+        overflow: auto;
+        overflow: hidden;
+
+        .child{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            max-width: 100%;
+        }
+        .child-children{
+            padding:0px;
+
+            .parent{
+                padding:0 10px;
+            }
+        }
+        .child-has-childs{
+            .react-divcreator-accordion__single-title:hover{
+                cursor: pointer;
+            }
+        }
+            
+        .react-divcreator-accordion__line-number{
+            width:25px;
+            height:25px;
+            border-radius:50%;
+            background-color:rgba(69,69,69,.1);
+            text-align:center;
+            line-height:25px;
+            display: inline-block;
+
+            span{
+                color:rgba(69,69,69,.6);
+                font-size:15px;
+            }
+        }
+        
+        .react-divcreator-accordion__single-content{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            box-sizing: border-box;
+
+            .react-divcreator-accordion__single-title,
+            .react-divcreator-accordion__single-description,
+            .react-divcreator-accordion__custom-data{
+                display: inline-block;
+            }
+
+            .react-divcreator-accordion__single-description{
+                display: block;
+            }
+        }
+    }
+    .padding{
+        padding:5px 10px;
+    }
+
+    .border{
+        border:1px solid rgba(69,69,69,.1);
+        border-radius:5px;
+        margin:2px 0;
+    }
+    .dots{
+        position: relative;
+    }
+    .dots:before{
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        width:1px;
+        height:100%;
+
+        border-style: none none none dashed; 
+        border-color: rgba(69,69,69,.1);
+        border-width: 2px;
+    }
+}

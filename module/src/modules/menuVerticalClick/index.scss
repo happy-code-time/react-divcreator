@@ -1,0 +1,123 @@
+$animation-time-single-menu-item-vertical__click: 300ms;
+
+@keyframes show-single-menu-item-vertical__click {
+    from {
+        transition: $animation-time-single-menu-item-vertical__click;
+        transition-duration: $animation-time-single-menu-item-vertical__click;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+    }
+  
+    to {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+@keyframes hide-single-menu-item-vertical__click {
+    from {
+        transition: $animation-time-single-menu-item-vertical__click;
+        transition-duration: $animation-time-single-menu-item-vertical__click;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+  
+    to {
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+}
+/*
+    If component are mounted
+*/
+.react-divcreator-menu--vertical-click-mounted{
+    .animation-y {
+        animation: show-single-menu-item-vertical__click $animation-time-single-menu-item-vertical__click ease-out forwards;
+        transition: $animation-time-single-menu-item-vertical__click;
+        transition-duration: $animation-time-single-menu-item-vertical__click;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+    }
+    .animation-y-back {
+        animation: hide-single-menu-item-vertical__click $animation-time-single-menu-item-vertical__click ease-out forwards;
+    }
+}
+/*
+    Regular
+*/
+.react-divcreator-menu--vertical-click{
+    width:100%;
+
+    .react-divcreator-menu--vertical-click__single-link{
+        position: static;
+        z-index:1;
+    }
+    span, a{
+        text-decoration:none;
+        color: rgba(69,69,69,.7);
+        font-size: 1rem;
+    }
+
+    .child{
+        display: block;
+        width: 100%;
+        height:100%;
+        z-index:2;
+        background: transparent;
+        
+        .react-divcreator-menu--vertical-click__custom-data{
+            position: relative;
+            z-index:-1;
+        }
+    }
+    .parent{
+        width:100%;
+        position: relative;
+    }
+    .parent-div-has-childs{
+        position: relative;
+    }
+    .child,
+    .child-children {
+        display: block;
+        box-sizing: border-box;
+        padding:5px;
+        min-height:30px;
+        line-height:30px;
+    }
+
+    .parent{
+        .site-left.child-children{
+            padding-left: 15px;
+        }
+    }
+
+    .react-divcreator-menu--vertical-click__single-text{
+        box-sizing: border-box;
+        padding:0 5px;
+    }
+
+    .border{
+        border:1px solid rgba(69,69,69,.1);
+        border-radius:5px;
+        margin:2px 0;
+    }
+
+    .dots{
+        position: absolute;
+        top:0;
+        height:100%;
+        width:15px;
+    }
+    .site-left{
+        .dots{
+            left:-5px;
+            border-left: 2px dashed rgba(69,69,69,.3);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.react-divcreator-breadcrumbs{
+
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator{
+        float: left;
+    }
+
+    .react-divcreator-breadcrumbs__breadcrumb--li{
+        float: left;
+    }
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator,
+    .react-divcreator-breadcrumbs__breadcrumb--li{
+        box-sizing: border-box;
+        padding:5px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,114 @@
+/*
+    ###########################################################
+    Stars
+    ###########################################################
+*/
+.react-divcreator-stars-ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.react-divcreator-stars-ul-li{
+    width:100%;
+    float:left;
+    height:30px;
+    clear:both;
+}
+.react-divcreator-stars-ul-li-text{
+    float:left;
+}
+.react-divcreator-stars-ul-li{
+    position: relative;
+}
+.react-divcreator-stars-ul-li-stars{
+    transform: rotateZ(180deg);
+    text-align:center;
+}  
+.react-divcreator-stars-single-stars-span,
+.react-divcreator-stars-single-stars-span-not-filled,
+.react-divcreator-stars-single-stars-span-filled {
+    display: block;
+    float:left;
+    width:30px;
+    height:20px;
+    position: relative;
+    font-size:20px;
+    line-height:20px;
+    transform: scale(0.7);
+}
+/*
+
+    DIRECTION LEFT
+
+*/
+/* on hover change the before keys of not filled stars to filled star*/
+.read-only-mode-off-not-filled:hover:before,
+.read-only-mode-off-not-filled:hover,
+.read-only-mode-off-filled:hover,
+.read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+.read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+.read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+.read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+    content: "★";
+    color:black;
+    cursor:pointer;
+}
+.react-divcreator-stars-single-stars-span-not-filled:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content: "☆";
+    transform: rotate(35deg);
+    font-size:30px;
+}
+.react-divcreator-stars-single-stars-span-filled:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content: "★";
+    transform: rotate(35deg);
+    font-size:30px;
+}
+
+/* 
+    DIRECTION RIGHT 
+*/
+.react-divcreator-stars-ul-li-stars-to-right{
+    text-align:center;
+}  
+/* on hover change the before keys of not filled stars to filled star*/
+.read-only-mode-off-not-filled-to-right:hover:before,
+.read-only-mode-off-not-filled-to-right:hover,
+.read-only-mode-off-filled-to-right:hover,
+.read-only-mode-off-not-filled-to-right:before:hover ~ .read-only-mode-off-not-filled-to-right:before,
+.read-only-mode-off-filled-to-right:before:hover ~ .read-only-mode-off-not-filled-to-right:before,
+.read-only-mode-off-filled-to-right:before:hover ~ .read-only-mode-off-filled-to-right:before,
+.read-only-mode-off-not-filled-to-right:before:hover ~ .read-only-mode-off-filled-to-right:before{
+    content: "★";
+    color:black;
+    cursor:pointer;
+}
+.react-divcreator-stars-single-stars-span-not-filled-to-right:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content: "★";
+    transform: rotate(0deg);
+    font-size:30px;
+}
+.react-divcreator-stars-single-stars-span-filled-to-right:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content: "☆";
+    transform: rotate(0deg);
+    font-size:30px;
+}

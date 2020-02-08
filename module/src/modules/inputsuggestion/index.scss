@@ -1,0 +1,187 @@
+.react-divcreator-inputsuggestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .selected {
+        background-color: rgba(69,69,69,.069);
+    }
+
+    .is-choosed{
+        position: relative;
+    }
+    .is-choosed:after{
+        content: '\2713';
+        // content: '✔';
+        color:#777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        position: absolute;
+        top:5px;
+        right:5px;
+    }
+}
+.react-divcreator-inputsuggestion__holder{
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgba(69,69,69,.1);
+}
+
+.react-divcreator-inputsuggestion__holder__single{
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgba(69,69,69,.1);
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+}
+
+.react-divcreator-inputsuggestion__input,
+.react-divcreator-inputsuggestion__input:hover,
+.react-divcreator-inputsuggestion__input:active{
+    background-color: transparent;
+    box-sizing:border-box;
+    padding:5px 10px;
+    border:none;
+    min-height:30px;
+    height: auto;
+    overflow-y:auto;
+    z-index:2;
+    display: inline-block;
+    min-width:300px;
+    clear:both;
+}
+
+.react-divcreator-inputsuggestion__choosed{
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 30px;
+    line-height:30px;
+
+    .react-divcreator-inputsuggestion__choosed--span{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0 10px 0 15px;
+        border-radius: 15px;
+        margin: 0 5px;
+        transition-duration: 300ms;
+        min-height: 30px;
+        line-height: 30px;
+    }
+    .react-divcreator-inputsuggestion__choosed--text{
+        color:rgba(99,99,99,0.9);
+        font-weight: 500;
+        font-size: 0.87rem;
+    }
+    .react-divcreator-inputsuggestion__remove:after{
+        content: '\2715';
+        color:rgba(69,69,69,.69);
+        font-weight: bold;
+        float: right;
+        margin: 5px 0 5px 10px;
+        font-size: 0.66rem;
+        padding: 5px;
+        background:rgba(99,99,99,.29);
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        line-height: 11px;
+        transition-duration: 300ms;
+    }
+    .react-divcreator-inputsuggestion__remove:hover:after{
+        cursor:pointer;
+        background:rgba(99,99,99,.49);
+    }
+}
+
+.react-divcreator-inputsuggestion__choosed__single{
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 30px;
+    line-height:30px;
+    margin-left: 5px;
+    margin-top: 2px;
+    background-color: transparent;
+    width: 30px;
+
+    .react-divcreator-inputsuggestion__choosed--span{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color:transparent;
+        width: 100%;
+    }
+    .react-divcreator-inputsuggestion__choosed--text{
+        color:rgba(99,99,99,0.9);
+        font-weight: 500;
+        font-size: 0.87rem;
+    }
+    .react-divcreator-inputsuggestion__remove{
+        display: block;
+        width: 100%;
+    }
+    .react-divcreator-inputsuggestion__remove:after{
+        content: '\2715';
+        color:rgba(69,69,69,.69);
+        font-weight: bold;
+        float: right;
+        margin: 7px 0 5px 10px;
+        font-size: 0.66rem;
+        padding: 5px;
+        background:rgba(99,99,99,.29);
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        line-height: 11px;
+        transition-duration: 300ms;
+    }
+    .react-divcreator-inputsuggestion__remove:hover:after{
+        cursor:pointer;
+        background:rgba(99,99,99,.49);
+    }
+}
+
+.react-divcreator-inputsuggestion__suggestions{
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    width: 100%;
+}
+
+.react-divcreator-inputsuggestion__suggestions--holder{
+    border-radius:5px;
+    background-color: rgb(255,255,255);
+}
+
+.react-divcreator-inputsuggestion__suggestions--single-suggestion{
+    width: 100%;
+    min-height:30px;
+    height:auto;
+    overflow-y: auto;
+    line-height:30px;
+    box-sizing: border-box;
+    padding:5px 10px;
+    position:relative;
+    width: 100%;
+    border-radius:5px;
+
+    svg{
+        position: absolute;
+        width: 20px;
+        height:20px;
+        right:20px;
+        top:calc(30px - (20px/2));
+    }
+}
+.react-divcreator-inputsuggestion__suggestions--single-suggestion:hover{
+    cursor: pointer;
+    background-color: rgba(69,69,69,.069);
+}

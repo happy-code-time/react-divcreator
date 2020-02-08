@@ -1,0 +1,90 @@
+/* 
+    VERTICAL
+    GLOBAL FOR ALL ITEMS IN MENU 
+*/
+.react-divcreator-menu-1-li-vertical{
+    float:left;
+}
+.react-divcreator-menu-1-vertical,
+.react-divcreator-menu-2-vertical,
+.react-divcreator-menu-3-vertical,
+.react-divcreator-menu-4-vertical,
+.react-divcreator-menu-5-vertical,
+.react-divcreator-menu-6-vertical{
+    list-style:none;
+}
+.react-divcreator-menu-a{
+    text-decoration: none;
+    display: block;
+}
+.react-divcreator-menu-span{
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    padding:5px;
+}
+.react-divcreator-menu-2-vertical,
+.react-divcreator-menu-3-vertical,
+.react-divcreator-menu-4-vertical,
+.react-divcreator-menu-5-vertical,
+.react-divcreator-menu-6-vertical{
+    position: absolute;
+}
+.react-divcreator-menu-2-vertical,
+.react-divcreator-menu-5-vertical{
+    top:100%;
+    left:0;
+}
+.react-divcreator-menu-3-vertical,
+.react-divcreator-menu-4-vertical,
+.react-divcreator-menu-6-vertical{
+    top:0px;
+    left:100%;
+}
+.react-divcreator-menu-1-li-vertical,
+.react-divcreator-menu-2-li-vertical,
+.react-divcreator-menu-3-li-vertical,
+.react-divcreator-menu-4-li-vertical,
+.react-divcreator-menu-5-li-vertical,
+.react-divcreator-menu-6-li-vertical{
+    position: relative;
+    width:100%;
+    min-height:30px;
+}
+
+/* MENU 1 */
+.react-divcreator-menu-1-li-vertical:hover .react-divcreator-menu-2-vertical{
+    display: block;
+}
+/* MENU 2 */
+.react-divcreator-menu-2-vertical{
+    display: none;
+}
+.react-divcreator-menu-2-li-vertical:hover .react-divcreator-menu-3-vertical{
+    display: block;
+}
+/* MENU 3 */
+.react-divcreator-menu-3-vertical{
+    display: none;
+}
+.react-divcreator-menu-3-li-vertical:hover .react-divcreator-menu-4-vertical{
+    display: block;
+}
+/* MENU 4 */
+.react-divcreator-menu-4-vertical{
+    display: none;
+}
+.react-divcreator-menu-4-li-vertical:hover .react-divcreator-menu-5-vertical{
+    display: block;
+}
+/* MENU 5 */
+.react-divcreator-menu-5-vertical{
+    display: none;
+}
+.react-divcreator-menu-5-li-vertical:hover .react-divcreator-menu-6-vertical{
+    display: block;
+}
+/* MENU 6 */
+.react-divcreator-menu-6-vertical{
+    display: none;
+}

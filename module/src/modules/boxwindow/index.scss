@@ -1,0 +1,240 @@
+.react-divcreator-box-window.dark{
+    .react-divcreator-box-window__header--buttons{
+        background-color:#3D3D3F;
+    }
+
+    .react-divcreator__content{
+        background:#212529;
+    }
+}
+.react-divcreator-box-window.light{
+    .react-divcreator-box-window__header--buttons{
+        background-color:rgba(99, 99, 99,.9);
+    }
+
+    .react-divcreator__content{
+        background-color:rgba(169,169,169,.3);
+    }
+}
+
+.react-divcreator-box-window{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding:10px;
+    min-width:150px;
+    
+    .b-t-l{
+        border-top-left-radius: 5px;
+    }
+    .b-t-r{
+        border-top-right-radius: 5px;
+    }
+    .b-b-l{
+        border-bottom-left-radius: 5px;
+    }
+    .b-b-r{
+        border-bottom-right-radius: 5px;
+    }
+    .p-r-l{
+        position: relative;
+        left:0px;
+    }
+    .p-r-r{
+        position: relative;
+        right:0px;
+    }
+
+    .react-divcreator-box-window__header.right{
+        float:right;
+    }
+    .react-divcreator-box-window__header.left{
+        float:left;
+    }
+
+    .react-divcreator-box-window__header{
+        position: relative;
+        width:100%;
+        background-color:rgb(2255,255,255);
+
+        .triangle{
+            max-width: 120px;
+        }
+        .no-triangle {
+            width: 100%;
+        }
+        .react-divcreator-box-window__header--buttons{
+            min-height: 40px;
+
+            .react-divcreator-box-window__header--buttons-minimize,
+            .react-divcreator-box-window__header--buttons-maximize,
+            .react-divcreator-box-window__header--buttons-close{
+                position: absolute;
+                width: 13px;
+                height:13px;
+                top:13px;
+                border-radius:50%;
+            }
+            .react-divcreator-box-window__header--buttons-minimize:hover,
+            .react-divcreator-box-window__header--buttons-maximize:hover,
+            .react-divcreator-box-window__header--buttons-close:hover{
+                cursor: pointer;
+            }
+            .react-divcreator-box-window__header--buttons-minimize,
+            .react-divcreator-box-window__header--buttons-maximize,
+            .react-divcreator-box-window__header--buttons-close{
+                position: absolute;
+            }
+            .react-divcreator-box-window__header--buttons-minimize{
+                background-color: gold;
+            }
+            .react-divcreator-box-window__header--buttons-maximize{
+                background-color: aquamarine;
+            }
+            .react-divcreator-box-window__header--buttons-close{
+                background-color: #F44559;
+            }
+
+            .react-divcreator-box-window__header--buttons-minimize__span,
+            .react-divcreator-box-window__header--buttons-maximize__span,
+            .react-divcreator-box-window__header--buttons-close__span{
+                display: block;
+                width: 100%;
+                height:100%;
+                text-align:center;
+            }
+        }
+        .buttons-left{
+            .react-divcreator-box-window__header--buttons-minimize{
+                left: 64px;
+            }
+            .react-divcreator-box-window__header--buttons-maximize{
+                left: 40px;
+            }
+            .react-divcreator-box-window__header--buttons-close{
+                left: 16px;
+            }
+        }
+        .buttons-right{
+            .react-divcreator-box-window__header--buttons-close{
+                right: 16px;
+            }
+            .react-divcreator-box-window__header--buttons-maximize{
+                right: 40px;
+            }
+            .react-divcreator-box-window__header--buttons-minimize{
+                right: 64px;
+            }
+        }
+        .triangle-right,
+        .triangle-left{
+            position: relative !important;
+        }
+        .triangle-right:after{
+            content: '';
+            position: absolute;
+            top:0;
+            right:0;
+            width: 0; 
+            height: 0; 
+            border-top: 0 solid transparent;
+            transform: rotateZ(-90deg);
+        }
+        .triangle-left:after{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            width: 0; 
+            height: 0; 
+            border-top: 0 solid transparent;
+            transform: rotateZ(-90deg);
+        }
+    }
+
+    .react-divcreator__content{
+        box-sizing: border-box;
+        padding:20px;
+        position: relative;
+        z-index: 1;
+
+
+        $animation-time-box-content: 300ms;
+
+        @keyframes show-single-box-content {
+            from {
+                transition: $animation-time-box-content;
+                transition-duration: $animation-time-box-content;
+                transform: scaleY(0);
+                -webkit-transform: scaleY(0);
+                transform-origin: 100% 0;
+                -webkit-transform-origin: 100% 0;
+            }
+        
+            to {
+                transform: scaleY(1);
+                -webkit-transform: scaleY(1);
+            }
+        }
+        @keyframes hide-single-box-content {
+            from {
+                transition: $animation-time-box-content;
+                transition-duration: $animation-time-box-content;
+                transform: scaleY(1);
+                -webkit-transform: scaleY(1);
+            }
+        
+            to {
+                transform-origin: 100% 0;
+                -webkit-transform-origin: 100% 0;
+                transform: scaleY(0);
+                -webkit-transform: scaleY(0);
+            }
+        }
+        .react-divcreator__content--content--animaton{
+            animation: show-single-accordion-item $animation-time-box-content ease-out forwards;
+            transition: $animation-time-box-content;
+            transition-duration: $animation-time-box-content;
+            transform: scaleY(0);
+            -webkit-transform: scaleY(0);
+            transform-origin: 100% 0;
+            -webkit-transform-origin: 100% 0;
+        }
+        .react-divcreator__content--content--animaton-back {
+            animation: hide-single-accordion-item $animation-time-box-content ease-out forwards;
+        }
+    }
+    
+    .titles{
+        li{
+            float:left;
+            box-sizing: border-box;
+            padding:10px;
+            margin:0 ;
+            border-top-left-radius: 5px; 
+            border-top-left-radius: 5px;
+        }
+    }
+    .content{
+        .holder{
+            width:100%;
+            overflow: hidden;
+    
+            ul{
+                width: 300%;
+        
+                li{
+                    float:left;
+                    width:33%;
+                    box-sizing: border-box;
+                    padding:10px;
+                    margin:0 ;
+                    border-top-left-radius: 5px; 
+                    border-top-left-radius: 5px;
+                }
+            }
+        }
+    }
+}

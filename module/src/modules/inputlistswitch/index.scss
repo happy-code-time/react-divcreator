@@ -1,0 +1,163 @@
+/*
+    Input list switch
+*/
+.react-divcreator-inputlistswitch{
+    width: 100%;
+    clear: both;
+    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+
+    .responsive-li-title{
+        @media screen and (max-width: 1024px){
+            width: 100%;
+            display: block;
+            text-align:left;
+            box-sizing: border-box;
+            padding:5px;
+        }
+        display: none;
+    }
+    .responsive-li{
+        @media screen and (max-width: 1024px){
+            width: 100% !important;
+            flex-direction: row;
+            text-align: left;
+
+            *{
+                float:left;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .responsive-span{
+            @media screen and (max-width: 1024px){
+                display: inline-block;
+                opacity: 1;
+                position: static;
+                z-index:1;
+            }
+            display: none;
+            opacity: 0;
+            position: relative;
+            z-index:-1;
+        }
+    }
+    .responsive-ul{
+        @media screen and (max-width: 1024px){
+            flex-direction: column;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.react-divcreator-inputlistswitch-header-ul{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.react-divcreator-inputlistswitch-ul,
+.react-divcreator-inputlistswitch-header-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align:left;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.react-divcreator-inputlistswitch-ul-li,
+.react-divcreator-inputlistswitch-header-ul-li{
+    float:left;
+    box-sizing: border-box;
+    padding:5px;
+    min-height:30px;
+    line-height:30px;
+}
+.react-divcreator-inputlistswitch-header-ul-li{
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
+    display: block;
+}
+.react-divcreator-inputlistswitch-header-ul-li:first-child{
+    @media screen and (max-width: 1024px){
+        display: block;
+    }
+    display: none;
+}
+
+.react-divcreator-inputlistswitch-ul-li__p{
+    width: 100%;
+    text-align: left;
+    overflow-x:auto;
+}
+.react-divcreator-inputlistswitch-ul-li__span,
+.responsive-span{
+    width: 100%;
+    text-align: left;
+    overflow-x:auto;
+}
+input:checked+.react-divcreator-inputlistswitch-switch-slider {
+    background-color: rgb(69,69,69);
+}
+
+.react-divcreator-inputlistswitch-switchers{
+    margin:5px 0;
+
+    .react-divcreator-inputlistswitch-switch{
+
+        position: relative;
+        display: inline-block;
+        width: 46px;
+        height: 24px;
+
+        input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    .react-divcreator-inputlistswitch-switch-slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+    .react-divcreator-inputlistswitch-switch-slider:before{
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+    .round{
+        border-radius: 24px;
+    }
+    .round:before{
+        border-radius: 50%;
+    }
+}
+.react-divcreator-inputlistswitch-switch-description{
+    box-sizing: border-box;
+    padding:10px;
+}
+
+input:checked+.react-divcreator-inputlistswitch-switch-slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}

@@ -1,0 +1,20 @@
+@import '../_declarations.scss';
+
+#app {
+    #root-light{
+        .website--changelog {
+            .box-content--div {
+                padding:10px;
+                min-height: 50px !important;
+                line-height: 30px;
+            }
+
+            .react-divcreator-box-boxes {
+                @media screen and (min-width: 1024px){
+                    width: calc(100% - #{$menu-width});                    
+                }
+                width: 100%;
+            }
+        }
+    } 
+}

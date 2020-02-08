@@ -1,0 +1,79 @@
+.react-divcreator-404-fire {
+    background-color: #b4ddf0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+
+    .content-404 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10% auto;
+        z-index: 2;
+
+        .text-404 {
+            font-size: 10rem;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 15px;
+        }
+
+        .text-1 {
+            text-align: center;
+            display: block;
+            position: relative;
+            letter-spacing: 12px;
+            font-size: 4em;
+            line-height: 80%;
+        }
+
+        .text-2 {
+            text-align: center;
+            display: block;
+            position: relative;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .button-navigation {
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            display: inline-block;
+            padding: 10px 30px;
+            z-index: 5;
+            font-size: 0.87rem;
+            border: 1px solid rgba(69, 69, 69, 0.1);
+            color: rgba(69, 69, 69, 0.8);
+            text-decoration: none;
+            margin: 10px 0;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        hr {
+            padding: 0;
+            border: none;
+            border-top: 5px solid #fff;
+            color: #fff;
+            text-align: center;
+            margin: 0 auto 30px auto;
+            width: 42%;
+            height: 10px;
+        }
+    }
+
+    .holder-404 {
+        position: relative;
+        z-index: 1;
+
+       
+    }
+}

@@ -1,0 +1,32 @@
+/*
+    Mount animation
+*/
+// $animation-time-mount: 300ms;
+
+// @keyframes show-single-item-mounted {
+//     from {
+//         margin-top:40px;
+//     }
+  
+//     to {
+//         margin-top:0px;
+//     }
+// }
+// @keyframes hide-single-item-mounted {
+//     from {
+//         margin-top:0px;
+//     }
+  
+//     to {
+//         margin-top:40px;
+//     }
+// }
+// .before-mount{
+//     animation: hide-single-item-mounted $animation-time-mount ease-out forwards;
+//     transition: $animation-time-mount;
+//     transition-duration: $animation-time-mount;
+//     margin-top:40px;
+// }
+// .mounted {
+//     animation: show-single-item-mounted 200ms ease-out forwards;
+// }

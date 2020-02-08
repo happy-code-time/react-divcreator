@@ -1,0 +1,103 @@
+/*
+    ###########################################################
+    Divtriangle
+    ###########################################################
+*/
+.react-divcreator-divtriangle {
+    width: 100px;
+    min-height: 40px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    margin:0 auto;
+}
+.react-divcreator-divtriangle.border{
+    border: 1px solid rgba(69,69,69,.2);
+}
+/*
+    POSITION
+*/
+.react-divcreator-divtriangle-direction-up:before,
+.react-divcreator-divtriangle-direction-down:before,
+.react-divcreator-divtriangle-direction-left:before,
+.react-divcreator-divtriangle-direction-right:before {
+    content: '';
+    border-color: transparent transparent #e8e9eb;
+    width: 0;
+    height: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0 20px 20px;
+    display: block;
+}
+.react-divcreator-divtriangle-direction-up:after,
+.react-divcreator-divtriangle-direction-down:after,
+.react-divcreator-divtriangle-direction-left:after,
+.react-divcreator-divtriangle-direction-right:after {
+    content: '';
+    border-color: transparent transparent rgb(255, 255, 255);
+    width: 0;
+    height: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0 20px 20px;
+    display: block;
+}
+.react-divcreator-divtriangle-direction-down:before,
+.react-divcreator-divtriangle-direction-down:after {
+    transform: rotateX(180deg);
+}
+.react-divcreator-divtriangle-direction-left:before,
+.react-divcreator-divtriangle-direction-left:after {
+    transform: rotateZ(-90deg);
+}
+.react-divcreator-divtriangle-direction-right:before,
+.react-divcreator-divtriangle-direction-right:after {
+    transform: rotateZ(90deg);
+}
+/*
+    TOP
+*/
+.react-divcreator-divtriangle-direction-up:before {
+    left: calc(50% - 20px);
+    top: -21px;
+}
+.react-divcreator-divtriangle-direction-up:after {
+    left: calc(50% - 20px);
+    top: -20px;
+}
+/*
+    DOWN
+*/
+.react-divcreator-divtriangle-direction-down:before {
+    left: calc(50% - 20px);
+    top: calc(100% + 1px);
+}
+.react-divcreator-divtriangle-direction-down:after {
+    left: calc(50% - 20px);
+    top: calc(100% + 0px);
+}
+/*
+    LEFT
+*/
+.react-divcreator-divtriangle-direction-left:before {
+    left: -31px;
+    top: calc(50% - 10px);
+}
+.react-divcreator-divtriangle-direction-left:after {
+    left: -30px;
+    top: calc(50% - 10px);
+}
+/*
+    RIGHT
+*/
+.react-divcreator-divtriangle-direction-right:before {
+    right: -31px;
+    top: calc(50% - 10px);
+}
+.react-divcreator-divtriangle-direction-right:after {
+    right: -30px;
+    top: calc(50% - 10px);
+}

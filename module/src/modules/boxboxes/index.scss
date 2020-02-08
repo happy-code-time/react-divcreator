@@ -1,0 +1,86 @@
+.react-divcreator-box-boxes--responsive{
+    .react-divcreator-box-boxes__data,
+    .react-divcreator-box-boxes__data--left-site__boxes,
+    .react-divcreator-box-boxes__data--right-site__boxes{
+        flex-direction: column !important;
+
+        .react-divcreator-box-boxes__data--left__single-box,
+        .react-divcreator-box-boxes__data--right__single-box{
+            margin:10px 0 !important;
+        }
+    }
+}
+
+.react-divcreator-box-boxes{
+
+    .react-divcreator-box-boxes-main-holder{
+        display: block;
+    }
+    
+    .react-divcreator-box-boxes__data{
+        box-sizing: border-box;
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .react-divcreator-box-boxes__data--left-site{
+            .react-divcreator-box-boxes__data--left-site__boxes{
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .react-divcreator-box-boxes__data--left__single-box.border{
+                    border:1px solid rgba(69,69,69,.1);
+                    border-radius:5px;
+                }
+                .react-divcreator-box-boxes__data--left__single-box{
+                    box-sizing: border-box;
+                    padding:10px;
+                    margin:10px;
+
+                    .react-divcreator-box-boxes__data--left__single-box--title{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding:10px;
+                    }
+                    .react-divcreator-box-boxes__data--left__single-box--content{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding:10px;
+                    }
+                }
+            }
+        }
+        .react-divcreator-box-boxes__data--right-site{
+            .react-divcreator-box-boxes__data--right-site__boxes{
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .react-divcreator-box-boxes__data--right__single-box.border{
+                    border:1px solid rgba(69,69,69,.1);
+                    border-radius:5px;
+                }
+                .react-divcreator-box-boxes__data--right__single-box{
+                    box-sizing: border-box;
+                    padding:10px;
+                    margin:10px;
+
+                    .react-divcreator-box-boxes__data--right__single-box--title{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding:10px;
+                    }
+                    .react-divcreator-box-boxes__data--right__single-box--content{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding:10px;
+                    }
+                }
+            }
+        }
+    }
+}

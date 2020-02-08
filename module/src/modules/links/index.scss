@@ -1,0 +1,127 @@
+/*
+    LINKS
+*/
+.react-divcreator-links-holder{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    padding:10px;
+    margin:10px auto;
+    overflow: hidden;
+    position: relative;
+    background:transparent;
+}
+.react-divcreator-links-holder a{
+    text-decoration: none;
+}
+.react-divcreator-links-content{
+    width:100%;
+    min-height:200px;
+    transition-duration:300ms;
+    position: relative;
+}
+.react-divcreator-links-single-link-data{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    transition-duration:300ms;
+}
+.react-divcreator-links-single-link{
+    position: relative;
+    border: 1px solid #E0E7ED;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition-duration:300ms;
+}
+.react-divcreator-links-single-link-image{
+    float:left;
+    position:relative;
+    overflow:hidden;
+    z-index: -1;
+    transition-duration:300ms;
+    width:100%;
+    min-height:200px;
+}
+.react-divcreator-links-single-link-background-for-animation{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    transition-duration: 500ms;
+    z-index: -1;
+}
+.react-divcreator-links-single-link-animation{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    transition-duration: 500ms;
+    background-position: 50%;
+}
+.react-divcreator-links-single-link:hover .react-divcreator-links-single-link-background-for-animation{
+    transform: scale(1.2);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.react-divcreator-links-single-link:hover .react-divcreator-links-single-link-animation{
+    transform: rotate(5deg);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.react-divcreator-links-single-link-background{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.react-divcreator-links-single-link-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding:10px;
+}
+.react-divcreator-links-single-link-description{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding:10px;
+    position: relative;
+}
+.react-divcreator-links-single-link-footer{
+    position:relative;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:auto;
+}
+@media screen and (min-width: 1024px){
+    .react-divcreator-links-single-link-animation{
+        background-position: 100%;
+    }
+    .react-divcreator-links-single-link-image{
+        width:40%;
+        min-height:300px;
+    }
+    .react-divcreator-links-content{
+        width:60%;
+        min-height:300px;
+    }
+    .react-divcreator-links-single-link{
+        flex-direction: row;
+    }
+    .react-divcreator-links-single-link-footer{
+        position: absolute;
+    }
+}

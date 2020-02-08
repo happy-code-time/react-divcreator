@@ -1,0 +1,3744 @@
+@import '_declarations.scss';
+
+/*
+    ACCORDION
+*/
+.react-divcreator-accordion{
+    max-width:1024px;
+    margin:0 auto;
+    min-width: 70%;
+
+    .parent{
+        border-radius:0px;
+    }
+
+    .child-children{
+        padding:0px;
+
+        .parent{
+            padding:0 10px;
+        }
+    }
+    .react-divcreator-accordion__single-title,
+    .react-divcreator-accordion__single-description{
+        box-sizing: border-box;
+        padding:10px;
+    }
+    
+    .react-divcreator-accordion__single-title{
+
+        span{
+            padding:0px !important;
+        }
+    }
+}
+
+.accordion-example-1{
+    margin:0 auto;
+    max-width: 70%;
+    position: absolute;
+    top:0;
+    left:15%;
+    padding:0;
+
+    .parent{
+        border-radius:0px;
+        position: relative;
+    }
+    .react-divcreator-accordion__single-title{
+        padding:0px 10px;
+
+        span{
+            padding:0 10px !important;
+        }
+    }
+    .parent-div-has-childs:after{
+        content: '\002B';
+        color:#777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        position: absolute;
+        top:10px;
+        right:20px;
+    }
+
+    .parent-div{
+        background-color: #eee;
+        transition-duration: 300ms;
+    }
+
+    .child-has-childs:hover,
+    .react-divcreator-accordion__single-content.opened{
+        background-color: #ccc;
+    }
+
+    .parent-div-no-childs{
+        padding:0;
+        background-color: transparent;
+    }
+
+    .react-divcreator-accordion__single-title,
+    .react-divcreator-accordion__single-description{
+        box-sizing: border-box;
+        padding:10px 0;
+    }    
+}
+/*
+    ARTICLES
+*/
+.react-divcreator-articles {
+    p{
+        box-sizing: border-box;
+        padding:10px;
+        line-height:25px;
+        color:rgba(69,69,69, .8);
+    }
+}
+.custom-article-1{
+    max-width:100%;
+    height:auto;
+    overflow:auto;
+    clear:both;
+    padding:20px 10px;
+
+    .react-divcreator-articles-click{
+        width:100%;
+        max-height:100%;
+        min-height:100px;
+        height:auto;
+        overflow:auto;
+        margin:1.5%;
+        padding:1%;
+        box-sizing: border-box;
+        transition-duration: 500ms;
+        cursor:pointer;
+    
+        .react-divcreator-articles-click--content-title{
+            width:100%;
+            padding: 0 0 20px 0;
+            min-height:30px;
+            height:auto;
+            overflow:auto;
+        }
+        .react-divcreator-articles-click--content-description,
+        .react-divcreator-articles-click--content-to-toggle--down{
+            p{
+                color:rgba(69,69,69,1);
+                font-size:16px;
+                line-height:25px;
+            }            
+        }
+        h1 {
+            color:rgba(69,69,69,.9);
+            font-size:18px;
+            text-align:left;
+        }
+    }
+}
+.custom-article-2{
+    max-width:100%;
+    height:auto;
+    overflow:auto;
+    clear:both;
+    padding:20px 10px;
+
+    .react-divcreator-articles-click{
+        width:100%;
+        max-height:400px;
+        min-height:100px;
+        height:auto;
+        overflow:auto;
+        margin:1.5%;
+        padding:1%;
+        box-sizing: border-box;
+        transition-duration: 500ms;
+        cursor:pointer;
+    
+        .react-divcreator-articles-click--content{
+            overflow: hidden;
+            padding-bottom:40px;
+        }
+        .react-divcreator-articles-click--content-title{
+            width:100%;
+            padding: 0 0 20px 0;
+            min-height:30px;
+            height:auto;
+            overflow:auto;
+        }
+        .react-divcreator-articles-click--content-description,
+        .react-divcreator-articles-click--content-to-toggle--down{
+            max-height:300px;
+            overflow-y: auto;
+            background:transparent;
+
+            p{
+                color:rgba(69,69,69,1);
+                font-size:16px;
+                line-height:25px;
+            }            
+        }
+        h1 {
+            color:rgba(69,69,69,.9);
+            font-size:18px;
+            text-align:left;
+        }
+    }
+}
+
+.custom-article-3{
+    max-width:100%;
+    height:auto;
+    overflow:auto;
+    clear:both;
+    padding:20px 10px;
+
+    .react-divcreator-articles-click{
+        width:100%;
+        max-height:400px;
+        min-height:100px;
+        height:auto;
+        overflow:auto;
+        margin:1.5%;
+        padding:1%;
+        box-sizing: border-box;
+        transition-duration: 500ms;
+        cursor:pointer;
+        display: inline-block;
+    
+        .react-divcreator-articles-click--content{
+            overflow: hidden;
+        }
+        .react-divcreator-articles-click--content-title{
+            width:100%;
+            padding: 0 0 20px 0;
+            min-height:30px;
+            height:auto;
+            overflow:auto;
+        }
+        .react-divcreator-articles-click--content-description,
+        .react-divcreator-articles-click--content-to-toggle--down{
+            max-height:300px;
+            overflow: hidden;
+            background:transparent;
+            box-sizing: border-box;
+
+            p{
+                color:rgba(69,69,69,1);
+                font-size:16px;
+                line-height:25px;
+            }            
+        }
+        h1 {
+            color:rgba(69,69,69,.9);
+            font-size:18px;
+            text-align:left;
+        }
+    }
+}
+@media screen and (min-width:920px){
+    .custom-article-1,
+    .custom-article-2,
+    .custom-article-3{
+        max-width:100%;
+        height:auto;
+        overflow:auto;
+        clear:both;
+        padding:20px 10px;
+    
+        .react-divcreator-articles-click,
+        .react-divcreator-articles-click{
+            float:left;
+            width:45%;
+        }
+    }
+}
+.custom-article-4{
+    .react-divcreator-articles-image,
+    .react-divcreator-articles-imageclick{
+        max-height:100%;
+        min-height:100px;
+        height:auto;
+        overflow:auto;
+        padding:20px;
+        box-sizing: border-box;
+        transition-duration: 500ms;
+        cursor:pointer;
+    
+        .react-divcreator-articles-image--img,
+        .react-divcreator-articles-imageclick--img{
+            display:none;
+            transition-duration: 500ms;
+            width: 100%;
+            height: 150px;
+        }
+        .react-divcreator-articles-imageclick--content-title{
+            width:100%;
+            padding: 0 0 20px 0;
+            min-height:30px;
+            height:auto;
+            overflow:auto;
+        }
+        p{
+            color:rgba(69,69,69,1);
+            font-size:16px;
+            line-height:25px;
+        }   
+        h1 {
+            color:rgba(69,69,69,.9);
+            font-size:18px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color:rgb(255,255,255) !important;
+        }
+    }
+    @media screen and (min-width: 920px){
+        .react-divcreator-articles-image,
+        .react-divcreator-articles-imageclick{
+            min-height:250px;
+        
+            .react-divcreator-articles-image--img,
+            .react-divcreator-articles-imageclick--img{
+                display:inherit;
+                background-position: 50% 100%;
+                height: 220px;
+            }
+        }   
+    }
+    @media screen and (min-width: 1120px){
+        .react-divcreator-articles-image,
+        .react-divcreator-articles-imageclick{
+            min-height:100px;
+
+            .react-divcreator-articles-image--img,
+            .react-divcreator-articles-imageclick--img{
+                display:inherit;
+                background-position: 50% 100%;
+                height: 250px;
+                width: 80%;
+            }
+        }   
+    }
+    @media screen and (min-width: 1320px){
+        .react-divcreator-articles-image,
+        .react-divcreator-articles-imageclick{
+
+            .react-divcreator-articles-image--img,
+            .react-divcreator-articles-imageclick--img{
+                display:inherit;
+                background-position: 70% 100%;
+                height: 300px;
+                width: 70%;
+            }
+        }   
+    }
+    @media screen and (min-width: 1620px){
+        .react-divcreator-articles-image,
+        .react-divcreator-articles-imageclick{
+
+            .react-divcreator-articles-image--img,
+            .react-divcreator-articles-imageclick--img{
+                height: 300px;
+                width:50%;
+                background-position: 60% 100%;
+            }
+        }   
+    }
+    @media screen and (min-width: 1920px){
+        .react-divcreator-articles-image,
+        .react-divcreator-articles-imageclick{
+
+            .react-divcreator-articles-image--img,
+            .react-divcreator-articles-imageclick--img{
+                width:40%;
+                height:350px;
+            }
+        }   
+    }
+}
+/*
+    BUTTONS
+*/
+.react-divcreator-buttons{
+    max-width:1024px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*
+    BUTTON NAVIGATION
+*/
+.custom-navigation{
+    width:50px;
+    height:50px;
+    margin:0 auto !important;
+}
+.custom-navigation-2{
+    color:rgb(69,69,69);
+    font-size: 16px;
+    text-align:center;
+    min-height:30px;
+    height:auto;
+    line-height:30px;
+    clear:both;
+    max-width:220px;
+    margin:0 auto !important;
+    padding:10px 20px;
+    background: rgba(30,50,80,7);
+    border-radius:5px;
+    cursor:pointer;
+    color:rgb(255,255,255);
+}
+/*
+    BOX
+*/
+.box-example-1{
+    max-width: 500px;
+    margin:0 auto;
+
+    .react-divcreator__content--title,
+    .react-divcreator__content--content{
+        p{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.box-example-2{
+    max-width: 500px;
+    margin:0 auto;
+
+    .react-divcreator__content--title,
+    .react-divcreator__content--content{
+        p{
+            color:rgb(69,69,69);
+        }
+    }
+}
+.box-example-3{
+    .react-divcreator__content--title,
+    .react-divcreator__content--content{
+        p{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.box-example-4{
+    .react-divcreator__content--title,
+    .react-divcreator__content--content{
+        p{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.box-example-1-animated{
+    max-width: 1400px;
+    margin:0 auto;
+
+    .react-divcreator__content--title,
+    .react-divcreator__content--content{
+        p{
+            box-sizing: border-box;
+            padding:20px 0;
+            color:rgb(255,255,255);
+            font-size: 1.2rem;
+        }
+    }
+}
+/*
+    BOXES
+*/
+.boxes-example-1{
+    position: relative;
+
+    .react-divcreator-box-boxes__data--left__single-box--title{
+        padding:5px;
+    }
+    .react-divcreator-box-boxes__data--left__single-box--content{
+        p{
+            text-align: justify;
+            color:rgba(99,99,99,.7);
+            font-size:1rem;
+            line-height:30px;
+        }
+    }
+
+    .react-divcreator-box-boxes__data--right-site__boxes{
+        height:100%;
+
+        .react-divcreator-box-boxes__data--right__single-box{
+            background-color:rgb(9,9,9);
+            border-radius:5px;
+
+            .react-divcreator-box-boxes__data--right__single-box--title{
+                height:100%;
+                position: relative;
+    
+                .box-text{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width: 100%;
+                    height:calc(100% - 2px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    z-index:1;
+                    border-radius: 5px;
+    
+                    p{
+                        text-align: center;
+                        color:rgb(255,255,255);
+                        font-size:1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.boxes-example-2{
+    position: relative;
+
+    .react-divcreator-box-boxes__data--left__single-box--title{
+        padding: 0 0 5px 0 !important;
+
+        .box-text-img{
+            position: relative;
+            border-radius: 5px;
+
+            img{
+                width: 100%;
+                max-height: 600px;
+                border-radius: 5px;
+            }
+
+            .box-text{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height:calc(100% - 2px);
+                transition-duration: 200ms;
+                background-color:rgba(39,39,39,.7);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                z-index:1;
+                opacity: 0;
+                border-radius: 5px;
+
+                p{
+                    text-align: center;
+                    color:rgb(255,255,255);
+                    font-size:1.2rem;
+                }
+            }
+        }
+        .box-text-img:hover{
+            .box-text{
+                opacity: 1;
+            }
+        }
+    }
+    .react-divcreator-box-boxes__data--left__single-box--content{
+        p{
+            text-align: justify;
+            color:rgba(99,99,99,.7);
+            font-size:1rem;
+            line-height:30px;
+        }
+    }
+
+    .react-divcreator-box-boxes__data--right-site__boxes{
+        height:100%;
+
+        .react-divcreator-box-boxes__data--right__single-box{
+            background-color:rgb(9,9,9);
+            border-radius:5px;
+
+            .react-divcreator-box-boxes__data--right__single-box--title,
+            .react-divcreator-box-boxes__data--right__single-box--content{
+                height:100%;
+                position: relative;
+    
+                .box-text{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width: 100%;
+                    height:calc(100% - 2px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    z-index:1;
+                    border-radius: 5px;
+    
+                    p{
+                        text-align: center;
+                        color:rgb(255,255,255);
+                        font-size:1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    BOX MENU
+*/
+.boxes-menu-example-1{
+    margin:0 auto;
+
+    .fas{
+        color:rgb(255,255,255);
+        font-size:0.87rem;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        margin:0 5px;
+        line-height:25px;
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-box-menu__open__close--box-li,
+    .react-divcreator-box-menu__open__close--box-preview{
+        transition-duration: 300ms;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:hover{
+        background-color: dodgerblue;
+        border:1px solid transparent;
+
+        .react-divcreator-box-menu__open__close--box-preview{
+            color:rgb(255,255,255);
+        }
+    }
+
+    li:first-child{
+        margin-left:10px
+    }
+}
+.boxes-menu-example-2{
+    margin:0 auto;
+
+    .fas{
+        color:rgb(255,255,255);
+        font-size:0.87rem;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        margin:5px 0;
+        line-height:25px;
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-box-menu__open__close--box-li,
+    .react-divcreator-box-menu__open__close--box-preview{
+        transition-duration: 300ms;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:hover{
+        background-color: dodgerblue;
+        border:1px solid transparent;
+
+        .react-divcreator-box-menu__open__close--box-preview{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.boxes-menu-example-3{
+    margin:0 auto;
+
+    .fas{
+        color:rgb(255,255,255);
+        font-size:0.87rem;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        margin: -5px 0px 5px 10px;
+        line-height:25px;
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-box-menu__open__close--box-li,
+    .react-divcreator-box-menu__open__close--box-preview{
+        transition-duration: 300ms;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:hover{
+        background-color: dodgerblue;
+        border:1px solid transparent;
+
+        .react-divcreator-box-menu__open__close--box-preview{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.boxes-menu-example-4{
+    margin:0 auto;
+
+    .fas{
+        color:rgb(255,255,255);
+        font-size:0.87rem;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        margin: 0 5px 5px -5px;
+        line-height:25px;
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-box-menu__open__close--box-li,
+    .react-divcreator-box-menu__open__close--box-preview{
+        transition-duration: 300ms;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:hover{
+        background-color: dodgerblue;
+        border:1px solid transparent;
+
+        .react-divcreator-box-menu__open__close--box-preview{
+            color:rgb(255,255,255);
+        }
+    }
+}
+/*
+    BREADCRUMBS
+*/
+.breadcrumbs-example-1{
+    max-width: 1024px;
+    margin:0 auto;
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator,
+    .react-divcreator-breadcrumbs__breadcrumb--li-span,
+    a{
+        font-size: 1.1087rem;
+        font-weight: 500;
+        color:rgba(0, 0, 0, .54);
+        transition-duration: 300ms;
+    }
+
+    a:hover{
+        color:rgba(0, 0, 0, .84);
+    }
+}
+.breadcrumbs-example-2{
+    max-width: 1024px;
+    margin:0 auto;
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator,
+    a{
+        font-size: 1.1087rem;
+        font-weight: 500;
+        color:rgba(0, 0, 0, .54);
+        transition-duration: 300ms;
+    }
+
+    a:hover{
+        color:rgba(0, 0, 0, .84);
+    }
+}
+.breadcrumbs-example-3{
+    max-width: 1024px;
+    margin:0 auto;
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator,
+    a{
+        font-size: 1.1087rem;
+        font-weight: 500;
+        color:rgba(0, 0, 0, .54);
+        transition-duration: 300ms;
+    }
+
+    a:hover{
+        color:rgba(0, 0, 0, .84);
+    }
+
+    i{
+        font-size: 1.1087rem;
+        font-weight: 500;
+        color:dodgerblue;
+    }
+}
+.breadcrumbs-example-4{
+    max-width: 1024px;
+    margin:0 auto;
+
+    .react-divcreator-breadcrumbs__breadcrumb--separator{
+        font-size: 1.1087rem;
+        color: rgb(255,55,255);
+        font-weight: bold;
+    }
+}
+/*
+    CARDS
+*/
+.own-card-class{
+    $card-width: 280px;
+    max-width:1400px;
+    margin:40px auto;
+
+    a{
+        text-decoration: none;
+        color:rgba(99,99,99,.7);
+    }
+
+    .react-divcreator-cards__single-card{
+        max-width:$card-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height:380px;
+    }
+    .react-divcreator-cards__single-card:hover{ 
+        box-shadow:2px 5px 10px rgba(69,69,69,.3);
+    }
+    
+    .react-divcreator-menu--vertical-click{
+        max-width: 90%;
+        margin:0 5%;
+    }
+
+    .react-divcreator-menu-horizontal-click,
+    .react-divcreator-menu-vertical-click{
+        .child{
+            white-space: nowrap;
+        }
+    }
+    .react-divcreator-cards-description{
+        padding:20px 10px;
+
+        span{
+            display: block;
+            text-align:center;
+            line-height:30px;
+        }
+    }
+
+    .stars{
+        width: 230px;
+        height: auto;
+        overflow: auto;
+        overflow-x:hidden;
+        padding: 20px 10px 20px 0;
+        margin:0 auto;
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.9);
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-left: -10px;
+            color:goldenrod;
+        }
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color:goldenrod;
+        }
+    }
+    .react-divcreator-menu-multiple-vertical-click{
+        max-width: 90%;
+        margin:0 5%;
+        
+        .parent{
+            .child-children{
+                position: absolute;
+                max-width: 100%;
+                left: 0;
+                top: 45px;
+                margin: 0;
+                padding: 0;
+                background-color:rgb(255,255,255);
+            }
+        }   
+    }
+}
+.own-card-class-2{
+    .react-divcreator-cards__single-card{
+        max-width: 400px;
+    }
+    .react-divcreator-cards-description{
+        span{
+            text-align:justify;
+        }
+    }
+}
+
+/*
+    DASHBOARD
+*/
+.react-divcreator-dashboard{
+    z-index:10;
+
+    .react-divcreator-dashboard-left__data,
+    .react-divcreator-dashboard-center__data{
+        padding:0 20px;
+    }
+    .react-divcreator-dashboard-top{
+        padding-bottom:10px;
+    
+        .custom-menu-dashboard{
+            .react-divcreator-menuanimation-hamburger__icons{
+                margin-top:10px;
+    
+                .react-divcreator-menuanimation-hamburger__icons-p-animation-1,
+                .react-divcreator-menuanimation-hamburger__icons-p-animation-2,
+                .react-divcreator-menuanimation-hamburger__icons-p-animation-3{
+                    background:rgb(255,255,255);
+                }
+            }
+            .link-animation{
+                line-height: 40px;
+                color:rgb(255,255,255);
+            }
+            .react-divcreator-menuanimation-holder{
+                @media screen and (max-width: $media-break){
+                    width: 100%;
+                    min-width: 350px;            
+                }
+                border-radius:5px;
+                width: 400px;
+    
+                .react-divcreator-menuanimation-holder-accordion{
+                    background:transparent;
+    
+                    .react-divcreator-accordion,
+                    .react-divcreator-accordion__single-content{
+                        padding:0;
+                    }
+                    .parent-div{
+                        .react-divcreator-accordion__single-accordion-element{
+                            border-bottom: 1px solid cornflowerblue;
+                        }
+                        .my-custom-classname-link{
+                            text-decoration: none;
+                            color:rgb(222,222,222);
+                            font-size: 1.2rem;
+                            transition-duration: 300ms;
+                        }
+                        .my-custom-classname-link:hover{
+                            color:gold;
+                        }
+                        i{
+                            color: rgba(199,199,199,.6);
+                            margin-right:10px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .react-divcreator-menuanimation-holder{
+            background-color: #212529;
+        }
+    }
+    .react-divcreator-dashboard-center{
+        .react-divcreator-image{
+            min-height:100%;
+        }
+    }
+    .react-divcreator-dashboard-right{
+        .own-card-class-2{
+            margin:0 auto 20px auto;
+            
+            .react-divcreator-cards__single-card{
+                min-height: 200px;
+            }
+        }
+    }
+    .react-divcreator-dashboard-bottom{
+        text-align:center;
+        color:rgb(255,255,255);
+        margin-top:10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        line-height:50px;
+    }
+    .react-divcreator-dashboard-bottom{
+        background-color: #212529;
+    }
+    .buttons-dashboard-example{
+        display: block;
+    
+        .react-divcreator-buttons__single-button{
+            margin: 10px 0;
+        }
+    }
+}
+/*
+
+    Divtriangle
+
+*/
+.divtriangle-custom-class{
+    width:200px;
+    max-height:100px;
+}
+.divtriangle-custom-class p{
+    line-height:100px;
+    text-align:center;
+    font-size:15px;
+}
+
+#divtriangle-1,
+#divtriangle-2{
+    margin: 20px auto;
+    
+    .react-divcreator-divtriangle-direction-up:before,
+    .react-divcreator-divtriangle-direction-down:before,
+    .react-divcreator-divtriangle-direction-left:before,
+    .react-divcreator-divtriangle-direction-right:before {
+        border-color: transparent transparent rgba(69,69,69,.69);
+    }
+    .react-divcreator-divtriangle-direction-up:after,
+    .react-divcreator-divtriangle-direction-down:after,
+    .react-divcreator-divtriangle-direction-left:after,
+    .react-divcreator-divtriangle-direction-right:after {
+        border-color: transparent transparent #f5f5f5;
+    }
+}
+
+.background-red{
+    background-color:#F44559;
+}
+.border-3{
+    border:3px solid rgba(69,69,69,.2);
+}
+.border-r{
+    border-radius:5px;
+}
+/*
+    FULLSCREEN LOADING CLICK
+*/
+#fullscreenloading-div-uuid-3a{
+    background: rgba(255, 255, 255, .7) !important;
+
+    .divcreator-fullscreenloading-child{
+        max-width:50vW;
+        max-height:50vH;
+        top:calc(50vH - 25vH);
+        left:calc(50vW - 25vW);
+        border-radius:10px;
+        box-shadow:3px 5px 6px rgba(69,69,69,.5);
+        background:rgb(255,255,255);
+    }
+}
+.react-divcreator-fullscreenloadingclick-child {
+    z-index:-1;
+    width: 100vW !important;
+    height: 100vH !important;
+    background-color: rgb(255,255,255);
+}
+
+.react-divcreator-fullscreenloadingstate__close{
+    transition-duration: 300ms;
+    color:rgb(255,255,255);
+}
+.react-divcreator-fullscreenloadingstate__close:hover{
+    color: #f44559;
+    cursor: pointer;
+}
+.fullscreenloading-example-text{
+    text-align:center;
+    box-sizing: border-box;
+    padding:10px;
+    border:1px solid rgba(69,69,69,.2);
+    cursor: pointer;
+}
+/*
+    IMAGE
+*/
+.custom-image-example-1,
+.custom-image-example-2{
+    max-width: 500px;
+    max-height:500px;
+    margin:0 auto;
+
+    .react-divcreator-image-child__custom-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1{
+            text-align: center;
+            color:gold;
+            font-size: 2rem;
+        }
+    }
+}
+/*
+    LINKS
+*/
+.react-divcreator-links-holder{
+    max-width: 1140px;
+    margin:0 auto;
+}
+.react-divcreator-links-single-link{
+    .react-divcreator-links-single-link-data{
+        div{
+            position: absolute;
+            width:100%;
+            height:30px;
+            bottom:0;
+            left:0;
+            background:rgb(39,39,39);
+
+            p{
+                text-align:center;
+                line-height:30px;
+                color:rgb(255,255,255);
+            }
+        }
+    }
+    .react-divcreator-links-single-link-title{
+        min-height:60px;
+        line-height:60px;
+
+        p{
+            font-size:18px;
+            color:rgba(69,69,69,.7);
+        }
+    }
+    .react-divcreator-links-single-link-description{
+        font-size:18px;
+        color:rgba(69,69,69,.5);
+        text-align: justify;
+    }
+    .icons{
+        max-width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+
+        i{
+            font-size:21px;
+            transition-duration:300ms;
+        }
+        i:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .fa-facebook-square{
+            color:dodgerblue;
+        }
+        .fa-heart{
+            color:#F44559;
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(1);
+            box-sizing: border-box;
+            color: gold;
+            transition-duration: 300ms;
+        }
+        .react-divcreator-stars-single-stars-span:hover{
+            transform: scale(1.1);
+        }
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color: gold;
+        }
+    }
+}
+/*
+
+    LIST
+
+*/
+.keys-for-type-example{   
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:10px 20px;
+
+    .react-divcreator-list--responsive{
+        .react-divcreator-list__data--ul-li{
+            width: 100% !important;
+        }
+    }
+    .react-divcreator-list__header{
+        background-color: $dodgerblue-dark;
+        border-top-left-radius:5px;
+        border-top-right-radius: 5px;
+
+        .react-divcreator-list__header--title{
+            box-sizing: border-box;
+            padding:20px 5px 10px 5px;
+            color:rgb(255,255,255);
+
+            i,
+            .react-divcreator-list__header--title-span{
+                color:white;
+                font-size: 1.4rem;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+
+    ul{
+        li{
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            min-height: 30px;
+            line-height: 30px;
+            width: 20%;
+            min-width: 200px;
+
+            .react-divcreator-list__header--ul-li--p{
+                color:rgb(255,255,255);
+                font-size:1.2rem;
+            }
+
+            .react-divcreator-list__data--ul-li--p{
+                color:rgba(69, 69, 69, 0.5);
+                font-size:1rem;
+            }
+        }
+
+        li:last-child{
+            width: 80%;
+        }
+    }
+
+    .react-divcreator-list__data--ul__odd {
+        background-color: rgba(69, 69, 69, 0.05);
+    }
+    .react-divcreator-list__data--ul__even {
+        background-color: rgba(69, 69, 69, 0.1);
+    }
+
+    .react-divcreator-list__data--ul {
+        li{
+            overflow: auto;
+        }
+    }
+}
+/*
+    INPUT
+*/
+.divcreator-input-live-example{
+    max-width:500px;
+    margin:0 auto;
+    overflow:auto;
+
+    h1{
+        width:100%;
+        min-height:30px;
+        line-height:30px;
+        font-size:21px;
+        color:rgba(69,69,69,.8);        
+    }
+    p{
+        width:100%;
+        min-height:30px;
+        line-height:30px;
+        font-size:18px;
+        color:rgba(69,69,69,.5);
+    }
+}
+/*
+    INPUTS
+*/
+// style of input field
+.react-divcreator-input{
+    position: relative;
+
+    .react-divcreator-input-child{
+        border-right: none;
+        border-radius:5px;
+    }
+    .react-divcreator-input-icon{
+        position: absolute;
+        top: 1px;
+        right: 0;
+        height: calc(100% - 2px);
+        background: dodgerblue;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        span{
+            display:block;
+            box-sizing: border-box;
+            padding:10px;
+            text-align: center;
+                        // height - padding (top+bottom/2 = 10px)
+            line-height:calc(50px - 10px);
+
+            i{
+                font-size:21px;
+                color:rgb(2255,255,255);
+            }
+            i:hover{
+                color:rgba(244,244,244,.8);
+            }
+        }
+        span:hover{
+            cursor: pointer;
+        }
+    }
+}
+.no-entrys-found{
+    box-sizing: border-box;
+    padding:10px;
+    color:rgba(69,69,69,.8);
+    font-size:18px;
+}
+/*
+    INPUT
+*/
+.custom-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    margin:0 auto;
+
+    .react-divcreator-input-error-messages__single-error__close,
+    .react-divcreator-input-success-messages__single-success__close,
+    .react-divcreator-input-warning-messages__single-warning__close{
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 0px !important;
+    }
+}
+/*
+    INPUT LIST
+*/
+.custom-inputlist{
+    max-width: 1024px;
+    margin:0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .react-divcreator-input-warning-messages__single-warning__p,
+    .react-divcreator-input-success-messages__single-success__p,
+    .react-divcreator-input-error-messages__single-error__p,
+    .react-divcreator-input-error-messages__single-error__close,
+    .react-divcreator-input-success-messages__single-success__close,
+    .react-divcreator-input-warning-messages__single-warning__close{
+        padding:0 !important;
+        margin:0 !important;
+    }
+
+    .react-divcreator-input-error-messages__single-error__close,
+    .react-divcreator-input-success-messages__single-success__close,
+    .react-divcreator-input-warning-messages__single-warning__close{
+        font-size: 24px !important;
+        margin-top: -15px !important;
+    }
+
+    .react-divcreator-inputlist-header-ul{
+        background-color:dodgerblue;
+    }
+    .react-divcreator-inputlist-header-ul-li{
+        p{
+            font-size:18px;
+            color:rgb(255,255,255);
+            margin:0 !important;
+            padding:0 !important;
+        }
+    }
+    .react-divcreator-inputlist-ul-li{
+        .react-divcreator-inputlist-ul-li__span{
+            display: block;
+            text-align:left;
+
+            i{
+                color:rgb(144,144,144);
+                font-size:18px;
+            }
+        }
+        .react-divcreator-inputlist-ul-li__span:hover{
+            cursor: pointer;
+
+            i{
+                color:dodgerblue;
+            }
+            .fa-dumpster{
+                color:#F44559;
+            }
+        }
+
+        p{
+            font-size:18px;
+            color:rgba(69,69,69,.5);
+            margin:0 !important;
+            padding:0 !important;
+        }
+    }
+    .react-divcreator-inputlist-ul__odd{
+        background:rgba(69,69,69,.05);
+    }
+    .react-divcreator-inputlist-ul__even{
+        background:rgba(69,69,69,.1);
+    }
+    .react-divcreator-inputlist-ul__odd:hover,
+    .react-divcreator-inputlist-ul__even:hover {
+        background:rgba(69,69,69,.2);
+    }
+    .react-divcreator-inputlist-ul:last-of-type{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .responsive-li-title{
+        i, span{
+            color:rgb(255,255,255);
+            font-size:1.4rem;
+            margin:0 10px 0 0;
+        }
+    }
+}
+/*
+    LIST ACTION SWITCHER
+*/
+.custom-inputlistswitch{
+    max-width: 1024px;
+    margin:0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .react-divcreator-input-warning-messages__single-warning__p,
+    .react-divcreator-input-success-messages__single-success__p,
+    .react-divcreator-input-error-messages__single-error__p,
+    .react-divcreator-input-error-messages__single-error__close,
+    .react-divcreator-input-success-messages__single-success__close,
+    .react-divcreator-input-warning-messages__single-warning__close{
+        padding:0 !important;
+        margin:0 !important;
+    }
+
+    .react-divcreator-input-error-messages__single-error__close,
+    .react-divcreator-input-success-messages__single-success__close,
+    .react-divcreator-input-warning-messages__single-warning__close{
+        font-size: 24px !important;
+        margin-top: -15px !important;
+    }
+
+    .react-divcreator-inputlistswitch-header-ul{
+        background-color:dodgerblue;
+    }
+    .react-divcreator-inputlistswitch-header-ul-li{
+        p{
+            font-size:18px;
+            color:rgb(255,255,255);
+        }
+        p,i{
+            text-align:left;
+        }
+    }
+    
+    .react-divcreator-inputlistswitch-ul-li{
+        .react-divcreator-inputlistswitch-ul-li__span{
+            display: block;
+            text-align:center;
+
+            i{
+                color:rgb(144,144,144);
+                font-size:18px;
+            }
+        }
+        .react-divcreator-inputlistswitch-ul-li__span:hover{
+            cursor: pointer;
+
+            i{
+                color:dodgerblue;
+            }
+            .fa-dumpster{
+                color:#F44559;
+            }
+        }
+
+        p{
+            font-size:18px;
+            color:rgba(69,69,69,.5)
+        }
+    }
+    .react-divcreator-inputlistswitch-ul__odd{
+        background:rgba(69,69,69,.05);
+    }
+    .react-divcreator-inputlistswitch-ul__even{
+        background:rgba(69,69,69,.1);
+    }
+    .react-divcreator-inputlistswitch-ul__odd:hover,
+    .react-divcreator-inputlistswitch-ul__even:hover {
+        background:rgba(69,69,69,.2);
+    }
+    .react-divcreator-inputlistswitch-ul:last-of-type{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .react-divcreator-inputlistswitch-switch{
+        input:checked+.react-divcreator-inputlistswitch-switch-slider {
+            background-color: rgba(26, 182, 157, .8);
+        }
+    }
+    .react-divcreator-inputlistswitch-switch-description{
+        color:rgba(69,69,69,.6);
+        font-size:18px;
+    }
+    .responsive-li-title{
+        i, span{
+            color:rgb(255,255,255);
+            font-size:1.4rem;
+            margin:0 10px 0 0;
+        }
+    }
+}
+/*
+    INPUT SUGGESTION
+*/
+.inputsuggestion-example-1--div{
+    width: 100%;
+
+    .inputsuggestion-example-1{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+    }
+}
+
+.inputsuggestion-example-all--div{
+    width: 100%;
+
+    .inputsuggestion-example-all{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+
+        .react-divcreator-inputsuggestion__choosed--span{
+            background-color: rgba(99,99,99,.3);
+        }
+    }
+}
+
+.inputsuggestion-example-5--div{
+    width: 100%;
+
+    .inputsuggestion-example-5{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+    }
+
+    .react-divcreator-inputsuggestion__choosed--span{
+        background-color: dodgerblue;
+    }
+
+    .react-divcreator-inputsuggestion__remove:after{
+        background-color: rgb(255,255,255);
+    }
+    .react-divcreator-inputsuggestion__choosed--text{
+        color:rgb(255,255,255)
+    }
+}
+/*
+
+    MENU ANIMATION HAMBURGER
+
+*/
+.menu-animation-span-example-hamburger-1{
+    max-width: 50px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-hamburger{
+        display: inline-block;
+        position: relative;
+
+        .react-divcreator-menuanimation-holder{
+            padding-left:0px;
+            padding-top:20px;
+            min-width: 250px;
+            box-shadow: 1px 2px 5px rgba(69,69,69,.2);
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(69,69,69);
+                font-size:1.3rem;
+                margin: 0 10px 0 0;
+            }
+            a{
+                color:rgba(99,99,99,.5);
+                font-size:1rem;
+                transition-duration: 200ms;
+            }
+            a:hover{
+                color: rgb(39,39,39);
+            }
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+.menu-animation-span-example-hamburger-2{
+    max-width: 50px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-hamburger{
+        display: inline-block;
+        position: relative;
+
+        .react-divcreator-menuanimation-holder{
+            padding:0px;
+            min-width: 250px;
+            box-shadow: 1px 2px 5px rgba(69,69,69,.2);
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(69,69,69);
+                font-size:1.3rem;
+                margin: 0 10px 0 0;
+            }
+            a{
+                color:rgba(99,99,99,.5);
+                font-size:1rem;
+                transition-duration: 200ms;
+            }
+            a:hover{
+                color: rgb(39,39,39);
+            }
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+/*
+
+    MENU ANIMATION DOTS
+
+*/
+.menu-animation-span-example-dots-1{
+    max-width: 50px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-dots{
+        display: inline-block;
+        position: relative;
+
+        .react-divcreator-menuanimation-holder{
+            padding:0px;
+            min-width: 250px;
+            box-shadow: 1px 2px 5px rgba(69,69,69,.2);
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(69,69,69);
+                font-size:1.3rem;
+                margin: 0 10px 0 0;
+            }
+            a{
+                color:rgba(99,99,99,.5);
+                font-size:1rem;
+                transition-duration: 200ms;
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(39,39,39);
+            }
+        }
+    }
+    .react-divcreator-menuanimation-icons--dots__animated{
+        .react-divcreator-menuanimation-icons--dots__div{
+            background-color:rgb(69,69,69);
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+.menu-animation-span-example-dots-2{
+    max-width: 50px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-dots{
+        display: inline-block;
+        position: relative;
+
+        .react-divcreator-menuanimation-holder{
+            padding:30px 0 0 0;
+            min-width: 250px;
+            box-shadow: 1px 2px 5px rgba(69,69,69,.2);
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(69,69,69);
+                font-size:1.3rem;
+                margin: 0 10px 0 0;
+            }
+            a{
+                color:rgba(99,99,99,.5);
+                font-size:1rem;
+                transition-duration: 200ms;
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(39,39,39);
+            }
+        }
+    }
+    .react-divcreator-menuanimation-icons--dots__animated{
+        .react-divcreator-menuanimation-icons--dots__div{
+            background-color:rgb(69,69,69);
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+/*
+
+    MENU ANIMATION SQUARE
+
+*/
+.menu-animation-span-example-square{
+    max-width: 50px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-square{
+        display: inline-block;
+        position: relative;
+
+        .react-divcreator-menuanimation-holder{
+            padding:0px;
+            min-width: 250px;
+            box-shadow: 1px 2px 5px rgba(69,69,69,.2);
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(69,69,69);
+                font-size:1.3rem;
+                margin: 0 10px 0 0;
+            }
+            a{
+                color:rgba(99,99,99,.5);
+                font-size:1rem;
+                transition-duration: 200ms;
+            }
+            a:hover{
+                color: rgb(39,39,39);
+            }
+        }
+    }
+    .react-divcreator-menuanimation-icons--square__animated{
+        .react-divcreator-menuanimation-icons--square__div-1,
+        .react-divcreator-menuanimation-icons--square__div-2,
+        .react-divcreator-menuanimation-icons--square__div-3,
+        .react-divcreator-menuanimation-icons--square__div-4,
+        .react-divcreator-menuanimation-icons--square__div-6,
+        .react-divcreator-menuanimation-icons--square__div-7,
+        .react-divcreator-menuanimation-icons--square__div-8,
+        .react-divcreator-menuanimation-icons--square__div-9{
+            background-color:rgb(39,39,39);
+        }
+        .react-divcreator-menuanimation-icons--square__div-5{
+            background-color:dodgerblue;
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+/*
+
+    MENU ANIMATION CUSTOM
+
+*/
+.menu-animation-span-example-custom{
+    width: 250px;
+    display: block;
+    margin:40px auto;
+
+    .react-divcreator-menuanimation-icons--custom{
+        box-sizing: border-box;
+        padding:0 10px;
+        transition-duration: 200ms;
+        border-bottom:1px solid transparent;
+
+        p{
+            line-height: 40px !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin:0 !important;
+            padding:0 !important;
+
+            i{
+                color:dodgerblue;
+                font-size:1.3rem;
+                margin: 5px 10px 10px 0;
+                transition-duration: 200ms;
+            }
+            span{
+                color:rgb(255,255,255);
+                transition-duration: 200ms;
+                width: 100%;
+            }
+        }
+    }
+    
+    .react-divcreator-menuanimation-icons--custom:hover{
+        cursor:pointer;
+    }
+
+    .react-divcreator-menuanimation-icons--custom__animated{
+        border-bottom:1px solid rgb(255,255,255);
+    }
+
+    .react-divcreator-menuanimation-custom{
+        width: 100%;
+        background-color:rgb(39,39,39);
+        border-radius:5px;
+        display: inline-block;
+        position: relative;
+        padding-top:10px;
+
+        .header-menu-animation{
+            background-color:rgb(39,39,39);            
+        }
+
+        .react-divcreator-menuanimation-holder{
+            padding:60px 0 0 0;
+            min-width: 250px;
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(255,255,255);
+                margin:0 10px 0 2px;
+            }
+            a{
+                color:rgba(199,199,199,.9);
+                font-size:1rem;
+                transition-duration: 200ms;
+            }
+            a:hover{
+                color: gold;
+            }
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+.menu-animation-span-example-custom-2{
+    width: 250px;
+    display: block;
+    margin:0 auto;
+
+    .react-divcreator-menuanimation-icons--custom{
+        box-sizing: border-box;
+        padding:0 10px;
+        transition-duration: 200ms;
+        border-bottom:1px solid transparent;
+
+        p{
+            line-height: 40px !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin:0 !important;
+            padding:0 !important;
+
+            i{
+                color:dodgerblue;
+                font-size:1.3rem;
+                margin: 5px 10px 10px 0;
+                transition-duration: 200ms;
+            }
+            span{
+                color:rgb(255,255,255);
+                transition-duration: 200ms;
+                width: 100%;
+            }
+        }
+    }
+    
+    .react-divcreator-menuanimation-icons--custom:hover{
+        cursor:pointer;
+    }
+
+    .react-divcreator-menuanimation-icons--custom__animated{
+        border-bottom:1px solid rgb(255,255,255);
+    }
+
+    .react-divcreator-menuanimation-custom{
+        width: 100%;
+        background-color:rgb(39,39,39);
+        border-radius:5px;
+        display: inline-block;
+        position: relative;
+        padding-top:10px;
+
+        .header-menu-animation{
+            background-color:rgb(39,39,39);            
+        }
+
+        .react-divcreator-menuanimation-holder{
+            min-width: 250px;
+
+            .react-divcreator-accordion__single-content{
+                padding-left:0px;
+            }
+
+            i{
+                color:rgb(255,255,255);
+                margin:0 10px 0 2px;
+            }
+            a{
+                color:rgba(199,199,199,.9);
+                font-size:1rem;
+                transition-duration: 200ms;
+            }
+            a:hover{
+                color: gold;
+            }
+        }
+    }
+    .react-divcreator-accordion,
+    .parent{
+        padding:0;
+    }
+}
+
+/*
+    MENU VERTICAL HOVER
+*/
+.custom-menu-1 {
+    max-width:150px;
+    margin: 10px;
+
+    li {
+        box-shadow:1px 2px 5px rgba(69,69,69,.2);
+        background-color:rgb(255,255,255);
+        margin:5px;
+        line-height:30px;
+        border-radius:3px;
+    }
+    li:first-child{
+        margin: 0 5px;
+    }
+    li:hover,
+    .menu-marked-1 {
+        background:#eb576f ;
+    }
+    .react-divcreator-menu-span{
+        display: block;
+        width:100%;
+        height:100%;
+    }
+    .react-divcreator-menu-2-vertical, 
+    .react-divcreator-menu-5-vertical {
+        top: 50px;
+        left: 0px;
+        background:rgb(255,255,255);
+        box-shadow:none;
+    }
+    .react-divcreator-menu-3-vertical, 
+    .react-divcreator-menu-4-vertical, 
+    .react-divcreator-menu-6-vertical {
+        top: 0px;
+        left: 150px;
+        background:rgb(255,255,255);
+        box-shadow:none;
+    }
+    .react-divcreator-menu-a{
+        color:rgba(69,69,69, .7);
+        transition-duration: 200ms;
+    }
+    .react-divcreator-menu-a:hover{
+        color:rgba(69,69,69, 1);
+    }
+}
+
+
+/*
+    MENU HORIZONTAL HOVER
+*/
+.custom-menu-2{
+    width:400px;
+    margin:0 auto;
+
+    li {
+        width: 100px;
+        box-shadow:1px 2px 5px rgba(69,69,69,.2);
+        background-color:rgb(255,255,255);
+        line-height:30px;
+        padding:5px 10px;
+        margin:5px;
+        border-radius:3px;
+    }
+    
+    ul li {
+        margin:5px;
+    }
+
+    .react-divcreator-menu-3-li-vertical,
+    .react-divcreator-menu-4-li-vertical,
+    .react-divcreator-menu-6-li-vertical {
+        margin-top:0px;
+    }
+
+    .react-divcreator-menu-2-li-vertical,
+    .react-divcreator-menu-5-li-vertical {
+        margin-left:0px;
+    }
+
+    li:hover,
+    .menu-marked-2{
+        background:rgba(75,159,215,1);
+    }
+
+    .react-divcreator-menu-1-horizontal,
+    .react-divcreator-menu-2-horizontal,
+    .react-divcreator-menu-3-horizontal,
+    .react-divcreator-menu-4-horizontal,
+    .react-divcreator-menu-5-horizontal,
+    .react-divcreator-menu-6-horizontal{
+        background:rgb(255,255,255);
+        box-shadow:none;
+    }
+    
+    .react-divcreator-menu-a{
+        color:rgba(69,69,69, .7);
+        transition-duration: 200ms;
+    }
+    .react-divcreator-menu-a:hover{
+        color:rgba(69,69,69, 1);
+    }
+}
+/*
+    MENU VERTICAL CLICK
+*/
+.menu-example-1-vertical-click,
+.menu-example-2-vertical-click,
+.menu-example-3-vertical-click{
+    @media screen and (min-width: $media-break){
+        margin: 0 calc(50% - 150px);        
+    }
+    width: 300px;
+    margin: 0 calc(50% - 150px);
+    display: block;
+    position: absolute;
+    z-index:1;
+    border-radius:5px;
+    box-sizing: border-box;
+    padding:10px 20px;
+    top:0;
+
+    .react-divcreator-menu--vertical-click__single-text{
+        color:rgba(69,69,69,.7);
+        transition-duration: 300ms;
+    }
+    .opened{
+        color:rgba(69,69,69,1);
+    }
+
+    i,
+    .closed{
+        transition-duration: 200ms;
+        color:rgba(69,69,69,.7);
+    }
+
+    i{
+        margin-left:10px;
+    }
+
+    .react-divcreator-menu--vertical-click__custom-data.opened{
+        i{
+            transform: rotateZ(180deg);
+        }
+    }
+}
+.menu-example-1-vertical-click{
+    background-color: rgba(45, 45, 45, .9);
+
+    .opened{
+        color:rgba(255,255,255,1);
+    }
+
+    i,
+    .closed{
+        transition-duration: 200ms;
+        color:rgba(255,255,255,.7);
+    }
+}
+.react-divcreator-menu--vertical-click__single-text:hover,
+.react-divcreator-menu--vertical-click__single-link:hover{
+    cursor: pointer;
+}
+
+/*
+    MENU HORIZONTAL CLICK
+*/
+.menu-example-horizontal-click-1{
+    max-width: 200px;
+    margin:0 auto;
+    
+    .react-divcreator-menu--horizontal-click__single-event:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu--vertical-click__single-text{
+        color:rgba(69,69,69,.7);
+        transition-duration: 300ms;
+    }
+
+    .opened{
+        color:rgba(69,69,69,1);
+        
+        i{
+            transform: rotateZ(-90deg);
+        }
+    }
+}
+.menu-example-horizontal-click-2{
+    max-width: 200px;
+    margin:0 auto;
+
+    .react-divcreator-menu--horizontal-click__single-event:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu--vertical-click__single-text{
+        color:rgba(69,69,69,.7);
+        transition-duration: 300ms;
+    }
+    
+    .opened{
+        color:rgba(69,69,69,1);
+        
+        i{
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+/*
+    MENU FIXED TOP
+*/
+.box-fixed-example-1,
+.box-fixed-example-2{
+    
+    .button-box-fixed-example-1,
+    .button-box-fixed-example-2{
+        max-width: 220px;
+        margin:0 auto;
+    }
+
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu-fixed-top__content{
+        background-color:rgb(39,39,39);
+    }
+}
+/*
+    MENU FIXED LEFT
+*/
+.box-fixed-left-example-1{
+    
+    .button-box-fixed-example-1{
+        max-width: 220px;
+        margin:0 auto;
+    }
+    
+    .react-divcreator-menu-fixed-left__content{
+        .react-divcreator-buttons{
+            flex-direction: column;
+    
+            .react-divcreator-buttons__single-button{
+                margin:10px;
+            }
+        }
+    }
+    
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu-fixed-left__content{
+        background-color:rgb(39,39,39);
+    }
+}
+.box-fixed-left-example-2{
+    
+    .button-box-fixed-example-2{
+        max-width: 220px;
+        margin:0 auto;
+    }
+    
+    .react-divcreator-menu-fixed-left__content{
+        .react-divcreator-buttons{
+            flex-direction: column;
+    
+            .react-divcreator-buttons__single-button{
+                margin:10px 0;
+            }
+        }
+    }
+    
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu-fixed-left__content{
+        background-color:rgb(39,39,39);
+    }
+}
+/*
+    MENU FIXED RIGHT
+*/
+.box-fixed-right-example-1{
+    
+    .button-box-fixed-example-1{
+        max-width: 220px;
+        margin:0 auto;
+    }
+    
+    .react-divcreator-menu-fixed-right__content{
+        .react-divcreator-buttons{
+            flex-direction: column;
+    
+            .react-divcreator-buttons__single-button{
+                margin:10px;
+            }
+        }
+    }
+    
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu-fixed-right__content{
+        background-color:rgb(39,39,39);
+    }
+}
+.box-fixed-right-example-2{
+    
+    .button-box-fixed-example-2{
+        max-width: 220px;
+        margin:0 auto;
+    }
+    
+    .react-divcreator-menu-fixed-right__content{
+        .react-divcreator-buttons{
+            flex-direction: column;
+    
+            .react-divcreator-buttons__single-button{
+                margin:10px 0;
+            }
+        }
+    }
+    
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-menu-fixed-right__content{
+        background-color:rgb(39,39,39);
+    }
+}
+/*
+    MENU FIXED BOTTOM
+*/
+.box-fixed-bottom-example-1{
+    max-width: 220px;
+    margin:0 auto;
+
+    .react-divcreator-buttons{
+        max-width: $media-break;
+    }
+
+    .react-divcreator-menu-fixed-bottom__content{
+        background-color:rgb(39,39,39);
+    }
+
+    .react-divcreator-buttons__single-button:hover{
+        cursor: pointer;
+    }
+}
+.box-fixed-example-2{
+    .box-fixed-bottom-example-2{
+        max-width: 220px;
+        margin:0 auto;
+    
+        .react-divcreator-buttons{
+            max-width: $media-break;
+        }
+    
+        .react-divcreator-buttons__single-button:hover{
+            cursor: pointer;
+        }
+    }
+    .react-divcreator-menu-fixed-bottom__content{
+        background-color:rgb(39,39,39);
+    }
+}
+/*
+    MODAL
+*/
+.custom-modal-example{
+    .react-divcreator-modal{
+        .react-divcreator-modal-child{
+            border-radius:5px;
+
+            .react-divcreator-modal-child-content{
+                line-height:50vH;
+                text-align:center;
+            }
+        }
+    
+        .react-divcreator-modal-holder-close{
+            padding:10px;
+        
+            p{
+                font-size: 2rem !important;
+                margin: 0 10px !important;
+                color:rgba(99,99,99,.9);
+                padding:0 !important;
+            }
+            p:hover{
+                cursor: pointer;
+                color:#F44559;
+            }
+        }
+    }
+    .react-divcreator-modal-holder-span{
+        display:block;
+        text-align:center;
+    
+        p{
+            display:inline-block;
+            color:rgb(69,69,69);
+            padding:10px 20px;
+            background:rgba(69,69,69,.1);
+            cursor:pointer;
+            border-radius:3px;
+        }
+    }
+}
+/* 
+    PAGING 
+*/
+.react-divcreator-paging{
+    border-radius:5px;
+
+    .react-divcreator-paging-topic-div{
+        background-color:dodgerblue;
+        border-radius:5px;
+    }
+}
+.react-divcreator-paging-content-ul-li-select{
+    position: relative;
+    width: 94%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid rgba(69,69,69,.3);
+    border-radius: 5px;
+}
+.menu-countable{
+    min-width: 700px;
+    max-width: 1024px;
+
+    .react-divcreator-paging-topic-ul li:first-child{
+        width:50px;
+    }
+}
+.react-divcreator-paging-content-div{
+    max-height: 250px;
+}
+.react-divcreator-paging-footer-dots-child-div{
+    width: 150px;
+    min-height: 30px;
+    height: auto;
+    overflow: auto;
+    padding: 20px 0;
+    left: -60px;
+}
+.root-paging{
+    margin:0 auto;
+}
+.root-paging-2{
+    margin:0 auto;
+    max-height:200px;
+
+    .react-divcreator-paging-content-div{
+        min-height:100px;
+    }
+}
+.root-paging-3{
+    margin:0 auto;
+    max-height:400px;
+    max-width: 350px;
+
+    .react-divcreator-paging-topic-div-horizontal{
+        width:150px;
+        box-sizing: border-box;
+        padding-left:40px;
+        overflow:hidden;
+        
+        .react-divcreator-paging-topic-ul-horizontal {
+            width:110px;
+            overflow:hidden;
+            
+            li{
+                width:100%;
+                background:rgba(242,242,242, .6);
+                padding:5px;
+                padding-left:10px;
+                margin:5px;
+                border-radius:5px;
+                line-height:45px;
+            }
+        }
+    }
+    .react-divcreator-paging-content-div-horizontal{
+        float:left;
+        box-sizing: border-box;
+        min-height:300px;
+        max-width: calc(100% - 110px);
+
+        li{
+            float:none;
+            width:100%;
+            padding:0;
+            margin:10px;
+            padding-left:10px;
+            line-height:45px;
+        }
+    }
+    .react-divcreator-paging-footer-div{
+        min-height:50px;
+        max-height:none;
+        clear:both;
+    }
+    .has-errors-ul{   
+        .has-errors-ul-li{
+            position: relative;
+        
+            .has-errors-ul-li-span{
+                position: absolute;
+                left:10px;
+                bottom:-20px;
+                font-size: 12px;
+                color:#F44559;
+                width:150px;
+            }
+        }
+    }
+    .has-errors-ul:before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 12px;
+        height: 12px;
+        background: #F44559;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+.root-paging-4{
+    margin:0 auto;
+    max-height:425px;
+    max-width: 350px;
+
+    .react-divcreator-paging-topic-div-horizontal{
+        width:150px;
+        box-sizing: border-box;
+        padding-left:40px;
+        overflow:hidden;
+        
+        .react-divcreator-paging-topic-ul-horizontal {
+            width:110px;
+            overflow:hidden;
+            
+            li{
+                width:100%;
+                background:rgba(242,242,242, .6);
+                padding:5px;
+                padding-left:10px;
+                margin:5px;
+                border-radius:5px;
+                line-height:45px;
+            }
+        }
+    }
+    .react-divcreator-paging-content-div-horizontal{
+        float:left;
+        box-sizing: border-box;
+        min-height:300px;
+        max-width: calc(100% - 150px);
+
+        li{
+            float:none;
+            width:calc(100% - 150px);
+            padding:0;
+            margin:10px;
+            margin-top:6px;
+            padding-left:10px;
+            line-height:45px;
+
+            input{
+                width:100px;
+            }
+        }
+    }
+    .react-divcreator-paging-footer-div{
+        min-height:50px;
+        max-height:none;
+        clear:both;
+    }
+    .react-divcreator-paging-button-save{
+        width:120px;
+        clear:both;
+        display: block;
+        margin:0 auto;
+
+        button {
+            width:120px;
+            height:30px;
+            line-height:30px;
+            font-size:1rem;
+            border:1px solid transparent;
+            border-radius:5px;
+            transition-duration: 300ms;
+            background:rgb(69,69,69);
+            color:rgb(255,255,255);
+            display: block;
+        }
+        button:hover{
+            background:transparent;
+            border:1px solid rgb(69,69,69);
+            cursor: pointer;
+            color:rgb(69,69,69);
+        }
+    }
+    .react-divcreator-paging-content-ul-li-select{
+        width: 120px;
+    }
+}
+.react-divcreator-paging-topic-ul{
+    padding: 0 0 5px 0;
+
+    li{
+        span{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.react-divcreator-paging-topic-ul li:first-child,
+.react-divcreator-paging-content-numbers-ul li{
+    background:transparent;
+    color:rgb(69,69,69);
+}
+.react-divcreator-paging-content-ul-li{
+    width:20% !important;
+}
+.react-divcreator-paging-content-ul-li-even,
+.react-divcreator-paging-content-ul-li-odd{
+    transition-duration: 300ms;
+    span{
+        color:rgb(69,69,69);
+    }
+}
+.react-divcreator-paging-content-ul{
+    width:calc(100% - 50px);
+    height:auto;
+    overflow:auto;
+}
+.react-divcreator-paging-content-ul:hover{
+    .react-divcreator-paging-content-ul-li-even,
+    .react-divcreator-paging-content-ul-li-odd{
+        background:rgba(58,138,201,.3);
+    }
+}
+/* Paging example display all */
+.paging-example-root__paging{
+    width:1140px;
+    height:auto;
+    box-sizing: border-box;
+    padding:20px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .react-divcreator-paging-topic-ul{
+        li{
+            width: calc((100% / 5));
+        }
+    }
+    .react-divcreator-paging-content-ul{
+        overflow: hidden;
+        clear: both;
+        padding: 5px;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+
+        li{
+            width:20%;
+            margin:5px 0;
+        }
+    }
+    .react-divcreator-paging-content-ul:hover{
+
+        li{
+            background:transparent;
+        }
+    }
+    .react-divcreator-paging-content-div{
+        max-height:none;
+
+        input{
+            box-sizing: border-box;
+            padding-left:10px;
+        }
+    }
+    .react-divcreator-paging-button-save{
+        width: 100%;
+        height:30px;
+        margin-top:15px;
+        clear: both;
+        display: block;
+
+        button {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1rem;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition-duration: 300ms;
+            background: dodgerblue;
+            color: white;
+            margin: 0 auto;
+            display: block;
+        }
+        button:hover{
+            cursor:pointer;
+            background: transparent;
+            border:1px solid dodgerblue;
+            color:rgb(69,69,69);
+        }
+    }
+    .has-errors-ul{   
+        .has-errors-ul-li{
+            position: relative;
+        
+            .has-errors-ul-li-span{
+                position: absolute;
+                left:0;
+                bottom:-30px;
+                font-size: 12px;
+                color:#F44559;
+            }
+        }
+    }
+    .has-errors-ul:before{
+        position: absolute;
+        content: '';
+        top: calc(50% - 6px);
+        right: 0px;
+        width: 12px;
+        height: 12px;
+        background: #F44559;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        z-index:1;
+    }
+}
+
+.paging-example-root__paging-advanced{
+    max-width:1140px;
+    min-height:100px;
+    height:auto;
+    overflow-x: visible; 
+    box-sizing: border-box;
+    padding:20px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .react-divcreator-paging-topic-div{
+        background:dodgerblue;
+
+        .react-divcreator-paging-topic-ul{
+            background:transparent;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 0 0 10px 0;
+
+            li{
+                width: calc((100% / 5) - (50px / 5));
+
+                span {
+                    color:rgb(255,255,255);
+                }
+            }
+            li:first-child{
+                width:50px;
+            }
+        }
+    }
+    .react-divcreator-paging-content-ul{
+        width:calc(100% - 50px);
+        overflow: hidden;
+        padding: 0 0 10px 0;
+        box-sizing: border-box;
+        position: relative;
+
+        li{
+            width:calc(20% - (50px / 5));
+        }
+        li:first-child{
+            width:50px;
+        }
+    }
+    .react-divcreator-paging-content-ul:hover{
+
+        li{
+            background:transparent;
+        }
+    }
+    .react-divcreator-paging-content-div{
+        max-height:none;
+
+        input{
+            box-sizing: border-box;
+            padding-left:10px;
+        }
+    }
+
+    .react-divcreator-paging-footer-ul{
+        max-width: 220px;
+
+        li{
+            background: dodgerblue;
+            border:2px solid transparent;
+            transition-duration: 300ms;
+
+            span {
+                color:rgb(255,255,255);
+            }
+        }
+        li:hover{
+            background: transparent;
+            border:2px solid dodgerblue;
+
+            span {
+                color:rgb(69,69,69);
+            }
+        }
+
+        .react-divcreator-paging-footer-dots-child-div{
+            min-height: 30px;
+            height: auto;
+            overflow: auto;
+            padding: 20px;
+            left: -130px;
+            background: transparent;
+            width: 240px;
+            overflow: auto;
+            box-sizing: border-box;
+            padding: 20px;
+            z-index:1;
+
+            .react-divcreator-paging-footer-dots-child-ul {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background: rgb(255,255,255);
+                height: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                overflow: auto;
+                border-radius:5px;
+
+                li{
+                    span {
+                        color: rgb(255,255,255);
+                    }
+                }
+                li:hover{
+                    span {
+                        color: rgb(69,69,69);
+                    }
+                }
+            }
+        }
+    }
+    .react-divcreator-paging-button-save{
+        width: 100%;
+        height:30px;
+        margin-top:15px;
+        clear: both;
+        display: block;
+
+        button {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1rem;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition-duration: 300ms;
+            background: dodgerblue;
+            color: white;
+            margin: 0 auto;
+            display: block;
+        }
+        button:hover{
+            cursor:pointer;
+            background: transparent;
+            border:1px solid dodgerblue;
+            color:rgb(69,69,69);
+        }
+    }
+    .has-errors-ul{   
+        .has-errors-ul-li{
+            position: relative;
+        
+            .has-errors-ul-li-span{
+                position: absolute;
+                left:0;
+                bottom:-30px;
+                font-size: 12px;
+                color:#F44559;
+            }
+        }
+    }
+    .has-errors-ul:before{
+        position: absolute;
+        content: '';
+        top: calc(50% - 6px);
+        right: 0px;
+        width: 12px;
+        height: 12px;
+        background: #F44559;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        z-index:1;
+    }
+}
+
+/*
+
+    SLIDER
+    EXAMPLE 1
+*/
+.react-divcreator-slider{
+    max-width:1024px;
+    margin:0 auto;
+    min-height:250px;
+    height: auto;
+    overflow: auto;
+    clear:both;
+    transition-duration:300ms;
+}
+.slider-example-1{
+    width:100%;
+
+    .react-divcreator-slider-next,
+    .react-divcreator-slider-prev{
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        line-height: 50px;
+        transition-duration: 300ms;
+        border-radius:50%;
+        background:rgba(69,69,69,0.5);
+        color:rgb(255,255,255);
+        text-align:center;
+    }
+    .react-divcreator-slider-next:hover,
+    .react-divcreator-slider-prev:hover{
+        cursor: pointer;
+    }
+    .react-divcreator-slider-next{
+        right:40px;
+    }
+    .react-divcreator-slider-prev{
+        left:60px;
+    }
+    .react-divcreator-slider-next-horizontal,
+    .react-divcreator-slider-prev-horizontal{
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    .react-divcreator-slider-holder{
+        height:100%;
+        clear:both;
+        border-radius:5px;
+
+        .react-divcreator-slider-dots{
+            width: auto;
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .react-divcreator-slider-dots-ul-li{
+                border:1px solid rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-active{
+                background: rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-ul-li:hover{
+                background: rgb(63,162,242);
+            }
+        }
+
+        .react-divcreator-slider-ul,
+        .react-divcreator-slider-ul-horizontal{
+            width:100%;
+            height:100%;
+
+            .example-img-1,
+            .example-img-2,
+            .example-img-3 {
+                width:100%;
+                height:100%;
+                background-size:cover;
+                background-position: 100% 50%;
+            }
+            .example-img-1{
+                background-image: url("/src/static/images/businessman-3213659_1920.jpg");
+            }
+            .example-img-2{
+                background-image: url("/src/static/images/birds.jpg");
+            }
+            .example-img-3{
+                background-image: url("/src/static/images/angry-bird-2234295_1920.jpg");
+            }
+        }
+    }
+}
+
+/* 
+    USER MOUSE INTERACTION
+*/
+.slider-example-1-interaction{
+    width:100%;
+
+    .react-divcreator-slider-next,
+    .react-divcreator-slider-prev{
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        line-height: 50px;
+        transition-duration: 300ms;
+        border-radius:50%;
+        background:rgba(69,69,69,0.5);
+        color:rgb(255,255,255);
+        text-align:center;
+    }
+    .react-divcreator-slider-next:hover,
+    .react-divcreator-slider-prev:hover{
+        cursor: pointer;
+    }
+    .react-divcreator-slider-next{
+        right:40px;
+    }
+    .react-divcreator-slider-prev{
+        left:60px;
+    }
+    .react-divcreator-slider-next-horizontal,
+    .react-divcreator-slider-prev-horizontal{
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    .react-divcreator-slider-holder{
+        height:100%;
+        clear:both;
+        border-radius:5px;
+
+        .react-divcreator-slider-dots{
+            width: auto;
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .react-divcreator-slider-dots-ul-li{
+                border:1px solid rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-active{
+                background: rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-ul-li:hover{
+                background: rgb(63,162,242);
+            }
+        }
+
+        .react-divcreator-slider-ul,
+        .react-divcreator-slider-ul-horizontal{
+            width:100%;
+            height:100%;
+        }
+    }
+    .react-divcreator-slider-ul:hover{
+        cursor: grab;
+    }
+    .react-divcreator-slider-ul:active{
+        cursor: grabbing;
+    }
+}
+/*
+    SLIDER 
+    EXAMPLE 2
+*/
+.slider-example-2{
+    width:100%;
+
+    .react-divcreator-slider-next,
+    .react-divcreator-slider-prev{
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        line-height: 50px;
+        transition-duration: 300ms;
+        border-radius:50%;
+        background:rgba(255,126,74,.8);
+        color:rgb(255,255,255);
+        text-align:center;
+    }
+    .react-divcreator-slider-next:hover,
+    .react-divcreator-slider-prev:hover{
+        cursor: pointer;
+    }
+    .react-divcreator-slider-next{
+        right:40px;
+    }
+    .react-divcreator-slider-prev{
+        left:60px;
+    }
+
+    .react-divcreator-slider-holder{
+        height:100%;
+        clear:both;
+
+        .react-divcreator-slider-dots{
+            width: 30px;
+            left: 30px;
+            bottom: auto;
+            top: 20px;
+
+            .react-divcreator-slider-dots-ul-li{
+                border:1px solid rgba(252,126,74,.5);
+            }
+            .react-divcreator-slider-dots-active{
+                background: rgb(252,126,74);
+            }
+            .react-divcreator-slider-dots-ul-li:hover{
+                background: rgb(252,126,74);
+            }
+        }
+
+        .react-divcreator-slider-ul{
+            width:100%;
+            height:100%;
+
+            .example-img-1,
+            .example-img-2,
+            .example-img-3 {
+                width:100%;
+                height:100%;
+                background-size:cover;
+            }
+            .example-img-1{
+                background-image: url("/src/static/images/color-theory-1176406-1920x1280-2.jpg");
+            }
+            .example-img-2{
+                background-image: url("/src/static/images/birds.jpg");
+            }
+            .example-img-3{
+                background-image: url("/src/static/images/users.jpg");
+            }
+        }
+    }
+}
+/*
+    HORIZONTAL SLIDER
+    WITH USER INTERACTION
+*/
+.slider-example-horizontal-interaction{
+    width:100%;
+    
+    .react-divcreator-slider-next,
+    .react-divcreator-slider-prev{
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        line-height: 50px;
+        transition-duration: 300ms;
+        border-radius:50%;
+        background:rgba(69,69,69,0.5);
+        color:rgb(255,255,255);
+        text-align:center;
+    }
+    .react-divcreator-slider-next:hover,
+    .react-divcreator-slider-prev:hover{
+        cursor: pointer;
+    }
+    .react-divcreator-slider-next{
+        right:40px;
+    }
+    .react-divcreator-slider-prev{
+        left:60px;
+    }
+    .react-divcreator-slider-next-horizontal,
+    .react-divcreator-slider-prev-horizontal{
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    .react-divcreator-slider-holder{
+        height:100%;
+        clear:both;
+        border-radius:5px;
+
+        .react-divcreator-slider-dots{
+            width: auto;
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .react-divcreator-slider-dots-ul-li{
+                border:1px solid rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-active{
+                background: rgb(63,162,242);
+            }
+            .react-divcreator-slider-dots-ul-li:hover{
+                background: rgb(63,162,242);
+            }
+        }
+
+        .react-divcreator-slider-ul,
+        .react-divcreator-slider-ul-horizontal{
+            width:100%;
+            height:100%;
+        }
+    }
+    .react-divcreator-slider-ul-li--custom-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align:center;
+
+        p{
+            color:rgb(255,255,255);
+        }
+    }
+}
+.slider-example-horizontal-interaction:hover{
+    cursor: grab;
+}
+.slider-example-horizontal-interaction:active{
+    cursor: grabbing;
+}
+/*
+    SLIDER 
+    EXAMPLE 3
+*/
+.slider-example-3{
+    max-width: 800px;
+    max-height:300px;
+    width:100%;
+    box-sizing: border-box;
+    padding:20px;
+    overflow: visible;
+    border-radius:5px;
+
+    .react-divcreator-slider-holder{
+        height:100%;
+    }
+
+    .react-divcreator-slider-next,
+    .react-divcreator-slider-prev{
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        line-height: 50px;
+        transition-duration: 300ms;
+        background-color:rgba(222,222,222,.5);
+        color:rgba(69,69,69, .6);
+        transition-duration: 200ms;
+        box-shadow:3px 4px 4px rgba(99,99,99,.4);
+        font-size:16px;
+        text-align:center;
+        border-radius:50%;
+    }
+
+    .react-divcreator-slider-next:hover,
+    .react-divcreator-slider-prev:hover{
+        cursor: pointer;
+    }
+
+    .react-divcreator-slider-next{
+        @media screen and (min-width: 65rem){
+            right:-30px;
+        }
+        right:-15px;
+    }
+    .react-divcreator-slider-prev{
+        @media screen and (min-width: 65rem){
+            left:-30px;
+        }
+        left:-15px;
+    }
+
+    .react-divcreator-slider-holder{
+        height:100%;
+        clear:both;
+
+        .react-divcreator-slider-ul{
+            width:100%;
+            height:100%;
+
+            .slider-cards-holder-span{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height:100%;
+
+                .slider-cards{
+                    @media screen and (min-width: 65rem){
+                        width:100%;
+                        margin:0%;
+                    }
+                    width:95%;
+                    height:100%;
+                    margin:0 2.5%;
+
+                    .react-divcreator-cards__single-card{
+                        max-width: 90%;
+                    }
+
+                    a{
+                        text-decoration:none;
+                    }
+                    .react-divcreator-cards-title-span{
+                        color:rgba(69,69,69,.6);
+                    }
+                    .react-divcreator-cards-description-span{
+                        color:rgba(69,69,69,.5);
+                    }
+                }
+            }
+        }
+        .react-divcreator-slider-ul:hover{
+            cursor: grab;
+        }
+        .react-divcreator-slider-ul:active{
+            cursor: grabbing;
+        }
+    }
+}
+
+@media screen and (min-width: 45rem){
+    .react-divcreator-slider{
+        height:200px
+    }
+}
+@media screen and (min-width: 55rem){
+    .react-divcreator-slider{
+        height:300px
+    }
+}
+@media screen and (min-width: 65rem){
+    .react-divcreator-slider{
+        height:400px
+    }
+}
+
+/*
+
+    SOURCODE
+
+*/
+.custom-sourcecode-class,
+.custom-sourcecode-class-2,
+.own-card-class-with-link{
+    height: auto;
+    overflow: auto;
+    clear:both;
+}
+.custom-sourcecode-class-2{
+    $animation-time-scaller: 700ms;
+
+    @keyframes animate-sourcecode-button {
+        0% {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+        25% {
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+        }
+        50% {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+        75% {
+            transform: scale(.9);
+            -webkit-transform: scale(.9);
+        }
+        100% {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+    }
+    .react-divcreator-sourcecode__custom--data-holder{
+        position: relative;
+
+        .react-divcreator-sourcecode__custom--data{
+            position: absolute;
+            top:50px;
+            left:15px;
+            width: 100%;
+            min-height: 30px;
+            height: auto;
+            opacity: 0;
+            transition-duration: 300ms;
+            background-color: rgb(255,255,255);
+        }
+    }
+      
+    .react-divcreator-sourcecode__custom--data-holder:after{
+        content: '↑';
+        position: absolute;
+        bottom:-30px;
+        left:40%;
+        font-size:32px;
+        animation: animate-sourcecode-button $animation-time-scaller infinite;
+        transform: rotate(-90deg);
+    }
+    .react-divcreator-sourcecode__span:hover{
+        .react-divcreator-sourcecode__custom--data{
+            opacity: 1;
+        }
+    }
+}
+/*
+
+    STARS
+
+*/
+.react-divcreator-stars{
+    .text{
+        top:- 180px !important;
+    }
+}
+.stars-example-1{
+    .stars{
+        width: 250px;
+        height: auto;
+        overflow: auto;
+        padding: 20px 0;
+        margin:0 auto;
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.9);
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-left: -10px;
+            color:gold;
+        }
+        /*
+            Change color of star after hover 
+            direction: LEFT
+        */
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color:gold;
+        }
+    }
+}
+.stars-example-2{
+    .stars{
+        width: 250px;
+        height: auto;
+        overflow: auto;
+        padding: 20px 0;
+        margin:0 auto;
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.9);
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-left: -10px;
+            color:goldenrod;
+        }
+        /*
+            Change color of star after hover 
+            direction: RIGHT
+        */
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color:goldenrod;
+        }
+    }
+}
+.stars-example-3{
+    .stars{
+        width: 250px;
+        height: auto;
+        overflow: auto;
+        overflow-x:hidden;
+        padding: 20px 10px 20px 0;
+        margin:0 auto;
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.9);
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-left: -10px;
+            color:goldenrod;
+        }
+        /*
+            Change color of star after hover 
+            direction: RIGHT
+        */
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color:goldenrod;
+        }
+    }
+}
+.stars-example-4{
+    .stars{
+        min-width:300px;
+        width:50%;
+        height: auto;
+        overflow: auto;
+        overflow-x:hidden;
+        padding: 20px 10px 20px 0;
+        margin:0 auto;
+        clear:both;
+        transition-duration: 300ms;
+
+        .react-divcreator-stars-ul{
+            width:100%;
+            padding:0;
+            margin:0;
+
+            .react-divcreator-stars-ul-li{
+                float:none;
+                max-width:100%;
+                padding:15px 2.5%;
+                clear:none;
+                height:20px;
+                border-bottom:1px solid rgba(69,69,69,.1);
+                transition-duration: 300ms;
+            }
+            .react-divcreator-stars-ul-li:nth-child(even){
+                padding-left:calc(2.5% - 1px);
+                border-left:1px solid transparent;
+            }
+            .react-divcreator-stars-ul-li-stars{
+                margin-right:10%;
+                transition-duration: 300ms;
+            }
+        }
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+            margin-left: 0;
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.8);
+            box-sizing: border-box;
+            padding: 0 16px;
+            color:gold;
+        }
+    }
+}
+
+@media screen and (min-width:740px){
+    .stars-example-5{
+        .stars{
+            width:500px;
+            padding: 20px 10px 20px 0;
+            clear:both;
+            
+            .react-divcreator-stars-ul{
+    
+                .react-divcreator-stars-ul-li{
+                    float:left;
+                    max-width:100%;
+                    padding:0;
+                    padding:10px 2.5%;
+                    clear:none;
+                    height:20px;
+                    border-bottom:1px solid transparent;
+                }
+                .react-divcreator-stars-ul-li:nth-child(even){
+                    padding-left:calc(2.5% - 1px);
+                    border-left:1px solid rgba(69,69,69,.1);
+                }
+                .react-divcreator-stars-ul-li-stars{
+                    margin-right:10px;
+                }
+            }
+            .react-divcreator-stars-ul-li-text{
+                margin-left:10px;
+            }
+            .react-divcreator-stars-single-stars-span{
+                margin-left: -10px;
+            }
+        }
+    }
+}
+.stars-example-5{
+    clear:both;
+
+    .stars{
+        width: 300px;
+        height: auto;
+        overflow: visible;
+        padding: 20px 10px 20px 0;
+        margin:0 auto;
+        min-height:30px;
+
+        .react-divcreator-stars-ul-li-text{
+            line-height:20px;
+            font-size:1em;
+            padding:0 10px;
+            color:rgb(69,69,69);
+        }
+        .react-divcreator-stars-single-stars-span{
+            transform: scale(0.9);
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-left: -5px;
+            color:gold;
+        }
+        /*
+            Change color of star after hover 
+            direction: RIGHT
+        */
+        .read-only-mode-off-not-filled:hover:before,
+        .read-only-mode-off-not-filled:hover,
+        .read-only-mode-off-filled:hover,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-not-filled:before,
+        .read-only-mode-off-not-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-filled:before,
+        .read-only-mode-off-filled:hover ~ .read-only-mode-off-not-filled:before{
+            color:gold;
+        }
+        .react-divcreator-stars-single-stars-span{
+            position: relative;
+
+            .text{
+                position: absolute;
+                top:-150px;
+                left:-75px;
+                width:150px;
+                min-height:100px;
+                line-height:30px;
+                text-align:center;
+                display:none;
+                height:auto;
+                padding:9px 20px;
+                background:rgb(255,255,255);
+                border:1px solid goldenrod;
+            }
+        }
+        .react-divcreator-stars-single-stars-span:hover{
+            .text{
+                display:block;
+            }   
+        }
+    }
+}
+/*
+    VERTICAL BARS
+*/
+.react-divcreator-verticalbars{
+    padding: 20px 0;
+    margin:0;
+}
+.display-on-hover-may-tasks{
+    position: absolute;
+    top:-220px;
+    left:0;
+    min-width:500px;
+    max-width:500px;
+    min-height:150px;
+    height:auto;
+    border:1px solid gray;
+    background:rgb(255,255,255);
+    border-radius:5px;
+    display:none;
+    padding:20px 0;
+    border-left:5px solid rgba(235,87,111,1);
+
+    h1{
+        text-align: center;
+    }
+    span{
+        display: block;
+        padding:20px;
+        padding-top:0;
+    }
+}
+.react-divcreator-verticalbars-entry:hover .display-on-hover-may-tasks{
+    display:block;
+}
+.react-divcreator-verticalbars-animated-bar{
+    background:rgba(75,159,215,.5)
+}
+.react-divcreator-verticalbars-entry:hover .react-divcreator-verticalbars-animated-bar{
+    background:rgba(75,159,215,1)
+}
+.react-divcreator-verticalbars-animated-bar{
+    transition-duration: 1500ms;
+}
+
+/*
+    VIDEOBACKGROUND
+*/
+.my-video-example{
+    max-width:500px;
+    margin:0 auto;
+    height:auto;
+    border-radius:5px;
+
+    .react-divcreator-videobackground--div-child{
+        z-index:11;
+    }
+
+    p{
+        text-align:center;
+        color:rgb(255,255,255);
+        line-height:40vH;
+        font-size: 2rem;
+    }
+}
+.my-video-example-2{
+    border-radius:10px;
+}
+.my-video-example-3{
+    z-index:-2;
+}
+
+/*
+    WEBSITE 404
+*/
+.website-404-span{
+    display:block;
+    width:100%;
+}

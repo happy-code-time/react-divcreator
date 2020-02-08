@@ -1,0 +1,47 @@
+/*
+    DASHBOARD
+*/
+.react-divcreator-dashboard--responsive{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.react-divcreator-dashboard--responsive{
+    .react-divcreator-dashboard__main-content{
+        flex-direction: column !important;
+    }
+}
+
+.react-divcreator-dashboard{
+    width: calc(100% - 20px);
+    display: block;
+    border-radius:5px;
+    margin:0 10px;
+    transition-duration: 200ms;
+
+    .react-divcreator-dashboard__main-content{
+        flex-direction: row;
+    }
+}
+
+.react-divcreator-dashboard__main-content{
+    display:flex;
+    justify-content: space-evenly;
+}
+.react-divcreator-dashboard.border{
+    border:1px solid rgba(199,199,199,.7);
+}
+.react-divcreator-dashboard-top__data,
+.react-divcreator-dashboard-left__data,
+.react-divcreator-dashboard-center__data,
+.react-divcreator-dashboard-right__data,
+.react-divcreator-dashboard-bottom__data{
+    width:100%;
+    min-height:100%;
+    height:auto;
+    clear:both;
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    position: static !important;
+}

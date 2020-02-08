@@ -1,0 +1,69 @@
+/*
+    ###########################################################
+    Image
+    ###########################################################
+*/
+.react-divcreator-image{
+    width: 100%;
+    height:100%;
+    position: static;
+    border-radius:5px;
+}
+.react-divcreator-image img{
+    width: 100%;
+    height:100%;
+    border-radius:5px;
+}
+.react-divcreator-image-child{
+    width:100%;
+    height:100%;
+    position: relative;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius:5px;
+    top: 0;
+    left: 0;
+}
+.react-divcreator-image-child img{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:1;
+}
+.react-divcreator-image-child__custom-data{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:2;
+}
+.react-divcreator-image__fullscreen{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vW;
+    height:100vH;
+    overflow: hidden;
+    z-index:-1;
+}
+.react-divcreator-image__fullscreen-data{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vW;
+    height:100vH;
+    overflow: hidden;
+    z-index:-1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

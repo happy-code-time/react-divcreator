@@ -1,0 +1,213 @@
+.react-divcreator-box-menu{
+    
+    .react-divcreator-box-menu__open__close{
+        position: relative;
+        border-radius:5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .react-divcreator-box-menu__open__close--box-ul{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            top:0;
+            
+            .react-divcreator-box-menu__open__close--box-li{
+                float: left;
+                box-sizing: border-box;
+                padding:10px;
+                border-radius:5px;
+            }
+        }
+    }
+
+    .react-divcreator-box-menu__open,
+    .react-divcreator-box-menu__close{
+        display:block;
+        width: 100%;
+        height:100%;
+    }
+
+    .react-divcreator-box-menu__open:hover,
+    .react-divcreator-box-menu__close:hover{
+        cursor: pointer;
+    }
+    
+    .react-divcreator-box-menu__close--button,
+    .react-divcreator-box-menu__open--button{
+        display: block;
+        text-align:center;
+    }
+
+    .react-divcreator-box-menu__open__close--box-preview{
+        display: block;
+    }
+}
+
+/*
+    Animation part
+*/
+.react-divcreator-box-menu{
+    $animation-time-box-menu: 300ms;
+
+    @keyframes show-single-box-right {
+        from {
+            transition: $animation-time-box-menu;
+            transition-duration: $animation-time-box-menu;
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            opacity: 0;
+        }
+    
+        to {
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+    @keyframes hide-single-box-right {
+        from {
+            transition: $animation-time-box-menu;
+            transition-duration: $animation-time-box-menu;
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            opacity: 1;
+        }
+    
+        to {
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            opacity: 0;
+        }
+    }
+
+    @keyframes show-single-box-left {
+        from {
+            transition: $animation-time-box-menu;
+            transition-duration: $animation-time-box-menu;
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            opacity: 0;
+        }
+    
+        to {
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+    @keyframes hide-single-box-left {
+        from {
+            transition: $animation-time-box-menu;
+            transition-duration: $animation-time-box-menu;
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            opacity: 1;
+        }
+    
+        to {
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            opacity: 0;
+        }
+    }
+
+    @keyframes show-single-box-bottom {
+        from {
+            margin-top:-40px;
+            opacity: 0;
+        }
+    
+        to {
+            margin-top:0;
+            opacity: 1;
+        }
+    }
+    @keyframes hide-single-box-bottom {
+        from {
+            margin-top:0;
+            opacity: 1;
+        }
+    
+        to {
+            margin-top:-40px;
+            opacity: 0;
+        }
+    }
+
+    @keyframes show-single-box-top {
+        from {
+            margin-bottom:-40px;
+            opacity: 0;
+        }
+    
+        to {
+            margin-bottom:0px;
+            opacity: 1;
+        }
+    }
+    @keyframes hide-single-box-top {
+        from {
+            margin-bottom:0px;
+            opacity: 1;
+        }
+    
+        to {
+            margin-bottom:-40px;
+            opacity: 0;
+        }
+    }
+
+    .react-divcreator-box-menu--animation-right{
+        animation: show-single-box-right $animation-time-box-menu ease-out forwards;
+        transition: $animation-time-box-menu;
+        transition-duration: $animation-time-box-menu;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+    }
+
+    .react-divcreator-box-menu--animation-back-right{
+        animation: hide-single-box-right $animation-time-box-menu ease-out forwards;
+    }
+
+    .react-divcreator-box-menu--animation-left{
+        animation: show-single-box-left $animation-time-box-menu ease-out forwards;
+        transition: $animation-time-box-menu;
+        transition-duration: $animation-time-box-menu;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform-origin: 100% 0;
+        -webkit-transform-origin: 100% 0;
+        opacity: 0;
+    }
+
+    .react-divcreator-box-menu--animation-back-left{
+        animation: hide-single-box-left $animation-time-box-menu ease-out forwards;
+    }
+
+    .react-divcreator-box-menu--animation-bottom{
+        animation: show-single-box-bottom $animation-time-box-menu ease-out forwards;
+        transition: $animation-time-box-menu;
+        transition-duration: $animation-time-box-menu;
+        top:-100%;
+    }
+
+    .react-divcreator-box-menu--animation-back-bottom{
+        animation: hide-single-box-bottom $animation-time-box-menu ease-out forwards;
+    }
+
+    .react-divcreator-box-menu--animation-top{
+        animation: show-single-box-top $animation-time-box-menu ease-out forwards;
+        transition: $animation-time-box-menu;
+        transition-duration: $animation-time-box-menu;
+        bottom:-100%;
+    }
+
+    .react-divcreator-box-menu--animation-back-top{
+        animation: hide-single-box-top $animation-time-box-menu ease-out forwards;
+    }
+}

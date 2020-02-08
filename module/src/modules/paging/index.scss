@@ -1,0 +1,233 @@
+/*
+    ###########################################################
+    Paging
+    ###########################################################
+*/
+/* 
+    PAGING
+*/
+.react-divcreator-paging{
+    position: relative;
+    box-shadow:1px 2px 5px rgba(69,69,69,.2);
+    box-sizing: border-box;
+    padding:20px;
+
+    input{
+        width: 100%;
+    }
+}
+.react-divcreator-paging:hover .react-divcreator-paging-button-prev{
+    opacity: 1;
+    left:-40px;
+}
+.react-divcreator-paging:hover .react-divcreator-paging-button-next{
+    opacity: 1;
+    right:-40px;
+}
+/* 
+    PAGING DIV
+*/
+.react-divcreator-paging-topic-div{
+    width:100%;
+    height:auto;
+    overflow: auto;
+}
+.react-divcreator-paging-topic-div-horizontal{
+    float:left;
+    width:100px;
+    height:auto;
+    overflow: auto;
+}
+.react-divcreator-paging-content-div{
+    width:100%;
+    height:100%;
+    min-height:250px;
+    clear:both;
+}
+.react-divcreator-paging-footer-div{
+    width:100%;
+    min-height:100px;
+    max-height:200px;
+}
+.react-divcreator-paging-current-site-div{
+    width:100%;
+    height:50px;
+    text-align:center;
+}
+.react-divcreator-paging-current-site-div span{
+    line-height:50px;
+}
+.react-divcreator-paging-button-prev{
+    position: absolute;
+    top:calc(50% - 25px);
+    left:-25px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    opacity: 0;
+    transition-duration: 300ms;
+    box-shadow: 1px 2px 3px rgba(69,69,69,.2);
+    cursor: pointer;
+    border-radius:50%;
+}
+.react-divcreator-paging-button-prev span{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.react-divcreator-paging-button-next{
+    position: absolute;
+    top:calc(50% - 25px);
+    right:-25px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    opacity: 0;
+    transition-duration: 300ms;
+    box-shadow: 1px 2px 3px rgba(69,69,69,.2);
+    cursor: pointer;
+    border-radius:50%;
+}
+.react-divcreator-paging-button-next span{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/* 
+    PAGING GLOBALS 
+*/
+.react-divcreator-paging ul{
+    list-style: none;
+}
+/* 
+    PAGING UL 
+*/
+.react-divcreator-paging-topic-ul{
+    height:auto;
+    overflow: auto;
+    margin:0;
+    padding:0;
+}
+.react-divcreator-paging-topic-ul-horizontal{
+    float:left;
+    width: 100px;
+    height:auto;
+    overflow: auto;
+    margin:0;
+    padding:0;
+}
+.react-divcreator-paging-content-numbers-ul{
+    float: left;
+    width:50px;
+    height:auto;
+    overflow: auto;
+    margin:0;
+    padding:0;
+}
+.react-divcreator-paging-topic-ul span{
+    margin-left:20px;
+}
+.react-divcreator-paging-content-ul {
+    margin:0;
+    padding:0;
+}
+.react-divcreator-paging-footer-ul {
+    max-width:250px;
+    margin:0 auto;
+}
+.react-divcreator-paging-footer-dots{
+    position: relative;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.react-divcreator-paging-footer-dots-child-div{
+    position: absolute;
+    display: none;
+}
+.react-divcreator-paging-footer-dots:hover .react-divcreator-paging-footer-dots-child-div{
+    display:block;
+}
+.react-divcreator-paging-footer-dots-child-ul{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.react-divcreator-paging-footer-dots-child-ul li{
+    margin:0;
+    padding:0;
+    float:left;
+    width:20px;
+}
+/* 
+    PAGING LI 
+*/
+.react-divcreator-paging-topic-ul li{
+    float:left;
+    width: calc((100% / 5) - (50px / 5));
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    color:white;
+    box-sizing: border-box;
+}
+.react-divcreator-paging-topic-ul-horizontal li{
+    float:left; 
+    width: 100px;
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    color:rgb(69,69,69);
+    box-sizing: border-box;
+}
+.react-divcreator-paging-content-ul-horizontal li{
+    float:left;
+    width:calc(100% - 100px);
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.react-divcreator-paging-content-ul li{
+    float:left;
+    width:calc(20% - 10px);
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.react-divcreator-paging-content-ul li span{
+    margin-left:20px;
+}
+.react-divcreator-paging-content-numbers-ul li {
+    float:left;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.react-divcreator-paging-content-numbers-ul li span{
+    margin-left:15px;
+}
+.react-divcreator-paging-footer-ul li{
+    float:left;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    margin:0;
+    padding:0;
+    border-radius:50%;
+    text-align:center;
+    margin:20px 10px;
+}
+.react-divcreator-paging-footer-ul li:hover{
+    cursor:pointer;
+}

@@ -1,0 +1,259 @@
+@import '../_declarations.scss';
+
+/*
+    FOOTER
+*/
+#footer{
+    width: 100%;
+    min-height:70px;
+    height:auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clear:both;
+    background-image: url("/src/static/images/slider-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: 100% 30%;
+    position: relative;
+
+    .footer-fixed{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height:100%;
+        background-color:rgba(34,34,34,.8);
+        z-index:1;
+    }
+    .react-divcreator-sourcecode{
+        background-color:rgba(34,34,34,.8) !important;
+    }
+    
+    .react-divcreator-box-boxes__data--left__single-box{
+        background-color: transparent !important;
+    }
+    
+    .boxes{        
+        position: relative;
+        z-index:2;
+        
+        .box-text-icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            text-align: center;
+
+            i{
+                font-size: 2rem;
+                margin-right:20px;
+                color:rgb(255,255,255);
+            }
+
+            h1{
+                font-size: 1.25rem;
+                font-weight: 500;
+                color:rgb(255,255,255);
+            }
+        }
+
+        .react-divcreator-sourcecode{
+            box-shadow: 0 0 1px rgba(30,144,255,.8);
+            transition-duration: 300ms;
+        }
+        .react-divcreator-sourcecode:hover{
+            box-shadow: 0 0 2px rgba(30,144,255,.8);
+        }
+
+        .react-divcreator-box-boxes__data--left__single-box,
+        .react-divcreator-box-boxes__data--right__single-box{
+
+            .react-divcreator-box-boxes__data--left__single-box--title,
+            .react-divcreator-box-boxes__data--right__single-box--title{
+                border-bottom:2px solid transparent !important;
+                position: relative;
+
+                h1{
+                    line-height: 30px;
+                    color:rgb(214,214,214);
+                }
+                i{
+                    font-size: 1.7rem !important;
+                    color: rgb(244,244,244);
+                    line-height: 30px;
+                }
+            }
+            .react-divcreator-box-boxes__data--left__single-box--title:after,
+            .react-divcreator-box-boxes__data--right__single-box--title:after{
+                content: '';
+                position: absolute;
+                bottom:0;
+                left:0;
+                width: 100%;
+                height:2px;
+                background-color:rgba(244,244,244,.3);
+                z-index:1;
+            }
+            .react-divcreator-box-boxes__data--left__single-box--title:before,
+            .react-divcreator-box-boxes__data--right__single-box--title:before{
+                content: '';
+                position: absolute;
+                bottom:0;
+                left:50%;
+                width: 0;
+                height:2px;
+                background-color: transparent;
+                z-index:2;
+                transition-duration: 800ms;
+            }
+
+            .box-content{
+                color:rgb(255,255,255);
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.75;
+                display: block;
+                box-sizing: border-box;
+                padding:10px;
+
+                .is-link{
+                    max-width: 250px !important;
+                    margin:10px 0 !important; 
+                }
+            }
+
+            .react-divcreator-sourcecode__single-line{
+                color:#ccc;
+            }
+        }
+
+        .react-divcreator-box-boxes__data--left__single-box:hover,
+        .react-divcreator-box-boxes__data--right__single-box:hover{
+            .react-divcreator-box-boxes__data--left__single-box--title:before,
+            .react-divcreator-box-boxes__data--right__single-box--title:before{
+                left:0;
+                width: 100%;
+                background-color: $green-light;
+            }
+        }
+
+        .divcreator-sourcecode-example-p{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.00938em;
+            padding-left:10px;
+            margin:20px 0;
+            color:rgb(214,214,214) !important;
+        }
+        .react-divcreator-sourcecode__lines-and-data{
+            letter-spacing: 0.02938em;
+
+            span{
+                letter-spacing: 0.02938em;
+            }
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $dodgerblue-dark;
+        text-align: center;
+        box-sizing: border-box;
+        padding:20px;
+        position: relative;
+        z-index:2;
+
+        p{
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: 0.0638em;
+            color: rgb(255, 255, 255);
+            font-size: 0.89em;
+        }
+    }
+}
+
+.footer-components{
+    @media screen and (min-width: 1024px){
+        width: calc(100% - #{$menu-width});
+    }
+    width: 100%;
+    min-height:70px;
+    height:auto;
+    box-sizing: border-box;
+    padding:20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    clear:both;
+    padding-top: 45px;
+
+    .prev{
+        width: 100%;
+
+        .is-link{
+            float: left;
+
+            i{
+                transform: rotateZ(-90deg);
+                margin-right:20px;
+            }
+        }
+    }
+    .next{
+        width: 100%;
+
+        .is-link{
+            float: right;
+
+            i{
+                margin-left:20px;
+            }
+        }
+    }
+
+    .is-link{
+        text-decoration: none;
+        box-sizing: border-box;
+        height: 35px;
+        line-height: 25px;
+        padding: 5px 10px;
+        max-width: 300px;
+        text-align: center;
+        background-color:$dodgerblue-dark-light;
+        color: rgb(255, 255, 255);
+        border-radius: 3px;
+        margin:0 10px;
+        position: relative;
+        z-index: 1;
+    
+        i{
+            color:rgb(255,255,255);
+        }
+    }
+
+    .is-link:after{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 0;
+        background-color:$dodgerblue-dark;
+        transition-duration: $default-transition;
+        z-index: -1;
+        border-radius: 5px;
+    }
+
+    .is-link:hover:after{
+        height:100%;
+    }
+}

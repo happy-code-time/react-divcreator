@@ -1,0 +1,73 @@
+html, 
+body,
+#app,
+#root-light, 
+#root-dark,
+#root-dashboard-light, 
+#root-dashboard-dark {
+    min-height: 100vh;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    background-color:white;
+    min-width: 380px;
+}
+
+body{
+    overflow-y:scroll;
+}
+
+#app,
+#root-light, 
+#root-dark,
+#root-dashboard-light, 
+#root-dashboard-dark {
+    z-index:2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.0075em;
+}
+
+/*
+    Sass Partials
+*/
+@import './website/reset.scss';
+
+@import '_declarations.scss';
+
+@import './website/components-code.scss';
+
+@import './website/footer.scss';
+
+@import './website/header.scss';
+
+@import './website/headerHomepage.scss';
+
+@import './website/not-found.scss';
+
+@import './website/scroll-to-top.scss';
+
+@import './website/website-copy-to-clipboard.scss';
+
+@import './website/website-mount-animation.scss';
+
+@import './src/static/sass/website/website-changelog.scss';
+
+/*
+    React divcreator
+*/
+@import './src/static/sass/react-divcreator/react-divcreator-examples.scss';
+
+/*
+    Website
+*/
+@import './src/static/sass/website/website.scss';

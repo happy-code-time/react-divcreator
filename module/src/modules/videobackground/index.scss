@@ -1,0 +1,41 @@
+/*
+    VIDEOBACKGROUND
+*/
+.react-divcreator-videobackground{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.react-divcreator-videobackground .react-divcreator-videobackground--div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.react-divcreator-videobackground .react-divcreator-videobackground--div .react-divcreator-videobackground--div-child {
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+    position: absolute;
+    z-index:1;
+}
+.react-divcreator-videobackground .react-divcreator-videobackground--div video{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+    position: relative;
+    z-index:-1;
+}
+.react-divcreator-videobackground-fullscreen{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100vW;
+    height:100vH;
+    overflow: hidden;
+}

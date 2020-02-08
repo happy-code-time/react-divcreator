@@ -1,0 +1,22 @@
+@import '../_declarations.scss';
+
+.website--notfound {
+    background-image: url("/src/static/images/slider-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+
+    .header--inside {
+        width: 100%;
+    }
+
+    .button-navigation{
+        transition-duration: $default_transition;
+    }
+    
+    .button-navigation:hover{
+        background-color: $dodgerblue-light-xl;
+        color:rgb(255,255,255);
+    }
+}

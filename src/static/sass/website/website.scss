@@ -1,0 +1,1304 @@
+@import '../_declarations.scss';
+
+.color-react-blue{
+    color: #66d9ef !important;
+}
+.color-buttons{
+    color:#e6db74 !important;
+}
+.color-data{
+    color:#a6e22e !important;
+}
+.color-key{
+    color:#F44559 !important;
+}
+
+.title-minimum{
+    font-size: 2rem !important;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding:10px 20px;
+    color: rgba(0, 0, 0, 0.54)
+}
+
+#app{
+    overflow-x:hidden;
+
+    #root-light{
+        .react-divcreator-box-boxes__data--left__single-box{
+            background-color:$gray-background;
+            margin-bottom:20px;
+        }
+
+        .react-divcreator-box-boxes__data--left__single-box--title,
+        .react-divcreator-box-boxes__data--right__single-box--title{
+            border-bottom: 1px solid $border-color;
+        }
+
+        .element-p-count,
+        .element-h1-count{
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: 0.0738em;
+            color: rgba(69,69,69,.8);
+            font-size: 5rem;
+            text-align: center;
+        }
+        .element-i-count{
+            font-size: 1.7rem !important;
+            margin-top:10px !important;
+        }
+        .element-h1-count{
+            font-size: 2.5rem !important;
+            color: rgba(69,69,69,1);
+        }
+
+        .react-divcreator-menu--vertical-click__single-link{
+            font-weight: 400;
+            font-size: 0.87rem;
+            color:rgba(0, 0, 0, 0.87);
+            min-height:30px;
+            line-height:30px;
+
+            .closed{
+                span{
+                    font-weight: 400;
+                    font-size: 0.87rem;
+                    color:rgba(0, 0, 0, 0.87);
+                }
+            }
+        }
+
+        .keys-component{
+
+            .react-divcreator-list--responsive{
+                .react-divcreator-list__data--ul-li{
+                    width: 100% !important;
+                }
+            }
+            .react-divcreator-list{
+                .react-divcreator-list__header{
+                    background-color: $dodgerblue-dark;
+                    border-top-left-radius:5px;
+                    border-top-right-radius: 5px;
+
+                    .react-divcreator-list__header--title{
+                        box-sizing: border-box;
+                        padding:20px 5px 10px 5px;
+                        color:rgb(255,255,255);
+
+                        i,
+                        .react-divcreator-list__header--title-span{
+                            color:white;
+                            font-size: 1.4rem;
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+
+                ul{
+                    li{
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 10px;
+                        min-height: 30px;
+                        line-height: 30px;
+                        width: 20%;
+                        min-width: 200px;
+
+                        .react-divcreator-list__header--ul-li--p{
+                            color:rgb(255,255,255);
+                            font-size:1.2rem;
+                        }
+
+                        .react-divcreator-list__data--ul-li--p{
+                            color:rgba(69, 69, 69, 0.5);
+                            font-size:1rem;
+                        }
+                    }
+
+                    li:last-child{
+                        width: 80%;
+                    }
+                }
+
+                .react-divcreator-list__data--ul__odd {
+                    background-color: rgba(69, 69, 69, 0.05);
+                }
+                .react-divcreator-list__data--ul__even {
+                    background-color: rgba(69, 69, 69, 0.1);
+                }
+
+                .react-divcreator-list__data--ul {
+                    li{
+                        overflow: auto;
+                    }
+                }
+            }
+
+            .keys-for-type{
+                @media screen and (min-width:1024px){
+                    width: calc(100% - #{$menu-width});
+                }
+                
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                padding:10px 20px;
+            }
+        }
+
+        .react-divcreator-sourcecode{
+            border-radius:5px;
+            background-color:$dark-background-light;
+            box-sizing: border-box;
+            padding:10px;
+            margin:10px 5px;
+
+            .react-divcreator-sourcecode__span{
+                font-size:0.95rem;
+                font-weight: 400;
+                color:rgb(255,255,255);
+            }
+
+            .react-divcreator-sourcecode__line-number{
+                width: 30px;
+                text-align: center;
+                margin-right:10px;
+
+                .fa-npm{
+                    font-size:1.4rem;
+                    color:#F44559;
+                    margin-top:5px;
+                }
+                .fa-yarn{
+                    font-size:1.4rem;
+                    color:#2C8EBB;
+                    margin-top:5px;
+                }
+            }
+            .react-divcreator-sourcecode__line-data{
+                width: calc(100% - 30px);
+            }
+        }
+
+        .website--home{
+            .boxes-1{
+                .box-content--div{
+                    min-height: unset !important;
+                }
+            }
+            /*
+                home-box
+            */
+            .home-box{
+                width: 100vw;
+                min-height: 500px;
+                height:auto;
+                clear: both;
+                background-color:rgb(255,255,255);
+
+                .box{
+                    max-width: 1024px;
+                    margin:80px auto 0 auto;
+                    box-sizing: border-box;
+                    padding:50px 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2.5rem;
+
+                    .icon{
+                        margin:10px auto 50px auto;
+                        font-size: 10rem;
+                        color:$dodgerblue-dark;
+                    }
+
+                    .title{
+                        font-size:2.34rem;
+                        color: $dodgerblue-light;
+                        letter-spacing: .56rem;
+                    }
+    
+                    .description{
+                        font-size:1.34rem;
+                        color: rgba(69,69,69,0.8);
+                        letter-spacing: .16rem;
+                        margin:50px auto;
+                    }
+
+                    .button-documentation{
+                        span{
+                            transition-duration: $default-transition;
+                            padding:10px 30px;
+                            border-radius:5px;
+                        }
+                    }
+
+                    .button-documentation:hover{
+                        span{
+                            background-color: $dodgerblue-light-xl;
+                        }
+                    }
+                }
+            }
+
+            /*
+                BOXES
+            */
+            .boxes{
+                margin:60px 0;
+                
+                .box-text-icon{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    text-align: center;
+
+                    i{
+                        font-size: 1.25rem;
+                        margin-right:20px;
+                    }
+
+                    h1{
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .react-divcreator-box-boxes__data--left__single-box--content,
+                .react-divcreator-box-boxes__data--right__single-box--content{
+                    padding:0;
+
+                    .box-content{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .box-content--div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            min-height:200px;
+                            position: relative;
+
+                            .box-content--span{
+                                color:$dark-text;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                line-height: 1.75;
+                                display: block;
+                                width: 30px;
+                                height:30px;
+                                padding:5px;
+                                border-radius:50%;
+
+                                i{
+                                    font-size: 1.75rem;
+                                }
+                            }
+                        }
+
+                        .image{
+                            border-radius:3px;
+                            width: calc(100% - 20px);
+                            margin:10px;
+                        }
+
+                        .is-link{
+                            text-decoration: none;
+                            box-sizing: border-box;
+                            height: 35px;
+                            line-height: 25px;
+                            padding: 5px 10px;
+                            max-width: 180px;
+                            text-align: center;
+                            background-color:$blue-light;
+                            color: rgb(255, 255, 255);
+                            border-radius: 3px;
+                            margin:0 10px;
+                            position: relative;
+                            z-index: 1;
+                        
+                            i{
+                                margin-left:20px;
+                                color:rgb(255,255,255);
+                            }
+                        }
+
+                        .is-link:after{
+                            content: '';
+                            position: absolute;
+                            bottom:0;
+                            left:0;
+                            width: 100%;
+                            height: 0;
+                            background-color:$blue;
+                            transition-duration: $default-transition;
+                            z-index: -1;
+                            border-radius: 5px;
+                        }
+                    
+                        .is-link:hover:after{
+                            height:100%;
+                        }
+                    }
+
+                    .divcreator-code-example--installation{
+                        .react-divcreator-sourcecode__type-space{
+                            display: none;
+                        }
+                    }
+
+                    .element-p,
+                    .divcreator-sourcecode-example-p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.75;
+                        letter-spacing: 0.00938em;
+                        padding-left:10px;
+                        margin:20px 0;
+                    }
+                }
+            }
+        }
+
+        /*
+            DOCUMENTATION
+        */
+        .website--documentation{
+            
+            .content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .left-menu{
+                    width: 250px;
+                    height:100vH;
+                    overflow-y:auto;
+                    position: fixed;
+                    left:0;
+                    top:0;
+                    border-right:1px solid rgba(69,69,69,.1);
+
+                    .header-menu-vertical-click{
+                        .react-divcreator-menu--vertical-click__single-text{
+                            color:rgba(0, 0, 0, .87);
+                        }
+                        .react-divcreator-menu--vertical-click__single-text:hover{
+                            cursor: pointer;
+                        }
+
+                        .parent{
+                            box-sizing: border-box;
+
+                            .child{
+                                display: inline-block;
+
+                                i{
+                                    float:right;
+                                    font-size:0.75rem;
+                                    color: rgba(69, 69, 69, .54);
+                                    margin-right:20px;
+                                    margin-top:10px;
+                                }
+                            }
+                        }
+
+                        .react-divcreator-menu--vertical-click__custom-data{
+                            i{
+                                transition-duration: $default-transition;
+                                transform: rotateZ(0deg);
+                            }
+                        }
+                        .opened{
+                            transition-duration: $default-transition;
+                        }
+                        .react-divcreator-menu--vertical-click__custom-data.opened{
+                            i{
+                                transform: rotateZ(90deg);
+                            }
+                        }
+                        .react-divcreator-menu--vertical-click__single-event{
+                            display: block;
+                        }
+
+                        .react-divcreator-menu--vertical-click__single-event{
+                            .opened{
+                                span{
+                                    font-size: 0.875rem;
+                                    line-height: 1.75;
+                                    color:rgba(0, 0, 0, 0.87);
+                                }
+                            }
+                        }
+                        .react-divcreator-menu--vertical-click__single-text{
+                            font-weight: 400;
+                            line-height: 1.75;
+                            font-size: 1.00875rem;
+                            color:rgba(0, 0, 0, 0.87);
+                        }
+                    }
+                }
+    
+                /*
+                
+                    RIGHT SITE
+
+                */
+
+                .right-site{
+                    @media screen and (min-width: $media-break){
+                        left:250px;
+                    }
+                    width: 100%;
+                    position: relative;
+                    left:0;
+
+                    h3, h4{
+                        margin: 40px 0 16px 20px;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.17;
+                        letter-spacing: 0.00735em;
+                    }
+
+                    h4{
+                        font-size: 1.2rem;
+                        margin: 0 0 16px 20px;
+                    }
+
+                    .documentation--links{
+                        text-decoration: none;
+                        box-sizing: border-box;
+                        height: 35px;
+                        line-height: 25px;
+                        padding: 5px 10px;
+                        max-width: 300px;
+                        text-align: center;
+                        background-color:$blue-light;
+                        color: rgb(255, 255, 255);
+                        border-radius: 3px;
+                        margin:10px 0 0 20px;
+                        position: relative;
+                        z-index: 1;
+                        display: inline-block;
+                    
+                        i{
+                            margin-left:20px;
+                            color:rgb(255,255,255);
+                        }
+                    }
+
+                    .documentation--links:after{
+                        content: '';
+                        position: absolute;
+                        bottom:0;
+                        left:0;
+                        width: 100%;
+                        height: 0;
+                        background-color:$blue;
+                        transition-duration: $default-transition;
+                        z-index: -1;
+                        border-radius: 5px;
+                    }
+                
+                    .documentation--links:hover:after{
+                        height:100%;
+                    }
+
+                    .boxes{
+                        margin:20px 0;
+                        
+                        .box-text-icon{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            text-align: center;
+        
+                            i{
+                                font-size: 1.25rem;
+                                margin-right:20px;
+                            }
+        
+                            h1{
+                                font-size: 1.25rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .react-divcreator-box-boxes{
+                            width: 100%;
+
+                            .react-divcreator-box-boxes__data--left__single-box{
+                                margin-bottom:20px;
+                            }
+                        }
+        
+                        .react-divcreator-box-boxes__data--left__single-box--content{
+                            padding:0;
+
+                            .box-content{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+        
+                                .box-content--div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-evenly;
+                                    min-height:200px;
+                                    position: relative;
+        
+                                    .box-content--span{
+                                        color:$dark-text;
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        line-height: 1.75;
+                                        display: block;
+                                        width: 30px;
+                                        height:30px;
+                                        padding:5px;
+                                        border-radius:50%;
+        
+                                        i{
+                                            font-size: 1.75rem;
+                                        }
+                                    }
+                                }
+        
+                                .image{
+                                    border-radius:3px;
+                                    width: calc(100% - 20px);
+                                    margin:10px;
+                                }
+        
+                                a{
+                                    text-decoration: none;
+                                    box-sizing: border-box;
+                                    height: 35px;
+                                    line-height: 25px;
+                                    padding: 5px 10px;
+                                    max-width: 180px;
+                                    text-align: center;
+                                    background-color:$dodgerblue-dark-light;
+                                    color: rgb(255, 255, 255);
+                                    border-radius: 3px;
+                                    margin:0 10px;
+                                    position: relative;
+                                    z-index: 1;
+                                
+                                    i{
+                                        margin-left:20px;
+                                        color:rgb(255,255,255);
+                                    }
+                                }
+        
+                                a:after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom:0;
+                                    left:0;
+                                    width: 100%;
+                                    height: 0;
+                                    background-color:$dodgerblue-dark;
+                                    transition-duration: $default-transition;
+                                    z-index: -1;
+                                    border-radius: 5px;
+                                }
+                            
+                                a:hover:after{
+                                    height:100%;
+                                }
+                            }
+        
+                            .react-divcreator-sourcecode{
+                                border-radius:5px;
+                                box-sizing: border-box;
+                                padding:10px;
+                                margin:0 5px 20px;
+        
+                                .react-divcreator-sourcecode__single-line,
+                                .react-divcreator-sourcecode__special,
+                                .react-divcreator-sourcecode__span{
+                                    font-size:0.95rem;
+                                    font-weight: 400;
+                                    color:rgb(255,255,255);
+                                }
+        
+                                .react-divcreator-sourcecode__showlines-ul-numbers-li{
+                                    text-align: center;
+        
+                                    .react-divcreator-sourcecode__showlines-ul-numbers-li-span{
+                                        line-height: 35px;
+                                    }
+        
+                                    .fa-npm{
+                                        font-size:1.2rem;
+                                        color:#F44559;
+                                    }
+                                    .fa-yarn{
+                                        font-size:1.2rem;
+                                        color:#2C8EBB;
+                                    }
+                                }
+                                .react-divcreator-sourcecode__showlines-ul-li-data{
+                                    padding-left:10px;
+        
+                                    .react-divcreator-sourcecode__type-space{
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+        
+                            .divcreator-code-example--installation{
+                                .react-divcreator-sourcecode__type-space{
+                                    display: none;
+                                }
+                            }
+        
+                            .element-p,
+                            .divcreator-sourcecode-example-p{
+                                font-size: 1rem;
+                                font-weight: 400;
+                                line-height: 1.75;
+                                letter-spacing: 0.01238em;
+                                padding-left:10px;
+                                margin:20px 0;
+                            }
+                        }
+                    }
+                }
+
+                .next-steps{
+                    @media screen and (min-width: $media-break){
+                        width: calc(100% - #{$menu-width});
+                    }
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        /*
+        
+            COMPONENTS
+        
+        */
+        .website--components{
+
+            .code-example,
+            .boxes{
+                @media screen and (min-width: $media-break){
+                    width: calc(100% - #{$menu-width});
+                }
+                width: 100%;
+            }
+
+            .react-divcreator-sourcecode{
+                background-color: rgba(69,69,69,.05);
+                color:rgba(69,69,69,.8);
+            }
+
+            .fa-react{
+                color:#66d9ef;
+                font-size:2rem;
+            }
+
+            .copy-to-clipboard{
+                float:left;
+                margin:10px 5px 20px 5px;
+            }
+
+            h1{
+                color:rgba(0, 0, 0, .54);
+                font-size: 1.2rem;
+                font-weight:500;
+                box-sizing: border-box;
+                padding-bottom:15px;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .left-menu{
+                    width: 250px;
+                    height:100vH;
+                    overflow-y:auto;
+                    position: fixed;
+                    left:0;
+                    top:0;
+                    border-right:1px solid rgba(69,69,69,.1);
+
+                    .header-title{
+                        box-sizing: border-box;
+                        padding:10px 20px;
+                        border-bottom: 1px solid rgba(69,69,69,.1);
+                        margin-bottom:10px;
+
+                        .element-p{
+                            box-sizing: border-box;
+                            color: rgba(0, 0, 0, .54);
+                            font-weight: 400;
+                            font-size: 0.75rem;
+                        }
+                    }
+
+                    .header-menu-vertical-click{
+                        .react-divcreator-menu--vertical-click__single-text{
+                            color:rgba(0, 0, 0, .87);
+                        }
+                        .react-divcreator-menu--vertical-click__single-text:hover{
+                            cursor: pointer;
+                        }
+
+                        .parent{
+                            box-sizing: border-box;
+
+                            .child{
+                                display: inline-block;
+
+                                i{
+                                    float:right;
+                                    font-size:0.75rem;
+                                    color: rgba(69, 69, 69, .54);
+                                    margin-right:20px;
+                                }
+                            }
+                        }
+
+                        .react-divcreator-menu--vertical-click__custom-data{
+                            i{
+                                transition-duration: $default-transition;
+                                transform: rotateZ(0deg);
+                            }
+                        }
+                        .opened{
+                            transition-duration: $default-transition;
+                        }
+                        .react-divcreator-menu--vertical-click__custom-data.opened{
+                            i{
+                                transform: rotateZ(90deg);
+                            }
+                        }
+                        .react-divcreator-menu--vertical-click__single-event{
+                            display: block;
+                            transition-duration: $default-transition;
+                        }
+
+                        .react-divcreator-menu--vertical-click__single-event:hover{
+                            background-color: rgba(244,244,244,.6);
+                        }
+                        .react-divcreator-menu--vertical-click__single-event{
+                            .opened{
+                                span{
+                                    font-size: 0.875rem;
+                                    line-height: 1.75;
+                                    color:rgba(0, 0, 0, 0.87);
+                                }
+                            }
+                        }
+                        .react-divcreator-menu--vertical-click__single-text{
+                            font-weight: 400;
+                            line-height: 1.75;
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+    
+                /*
+                
+                    RIGHT SITE
+
+                */
+
+                .right-site{
+                    @media screen and (min-width: $media-break){
+                        left:250px;
+                    }
+                    width: 100%;
+                    position: relative;
+                    left:0;
+
+                    h3, h4{
+                        margin: 40px 0 16px 20px;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.17;
+                        letter-spacing: 0.01235em;
+                    }
+
+                    h4{
+                        font-size: 1.2rem;
+                        margin: 0 0 16px 20px;
+                    }
+
+                    .documentation--links{
+                        text-decoration: none;
+                        box-sizing: border-box;
+                        height: 35px;
+                        line-height: 25px;
+                        padding: 5px 10px;
+                        max-width: 300px;
+                        text-align: center;
+                        background-color:$red-light;
+                        color: rgb(255, 255, 255);
+                        border-radius: 3px;
+                        margin:10px 0 0 20px;
+                        position: relative;
+                        z-index: 1;
+                        display: inline-block;
+                    
+                        i{
+                            margin-left:20px;
+                            color:rgb(255,255,255);
+                        }
+                    }
+
+                    .documentation--links:after{
+                        content: '';
+                        position: absolute;
+                        bottom:0;
+                        left:0;
+                        width: 100%;
+                        height: 0;
+                        background-color:$red;
+                        transition-duration: $default-transition;
+                        z-index: -1;
+                        border-radius: 5px;
+                    }
+                
+                    .documentation--links:hover:after{
+                        height:100%;
+                    }
+
+                    .boxes{
+                        margin:20px 0;
+                        
+                        .box-text-icon{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            text-align: center;
+        
+                            i{
+                                font-size: 1.25rem;
+                                margin-right:20px;
+                            }
+        
+                            h1{
+                                font-size: 1.25rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .react-divcreator-box-boxes{
+                            width: 100%;
+
+                            .react-divcreator-box-boxes__data--left__single-box{
+                                margin-bottom:20px;
+                            }
+                        }
+        
+                        .react-divcreator-box-boxes__data--left__single-box--content{
+                            padding:0;
+
+                            .box-content{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+        
+                                .box-content--div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-evenly;
+                                    min-height:200px;
+                                    position: relative;
+        
+                                    .box-content--span{
+                                        color:$dark-text;
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        line-height: 1.75;
+                                        display: block;
+                                        width: 30px;
+                                        height:30px;
+                                        padding:5px;
+                                        border-radius:50%;
+        
+                                        i{
+                                            font-size: 1.75rem;
+                                        }
+                                    }
+                                }
+        
+                                .image{
+                                    border-radius:3px;
+                                    width: calc(100% - 20px);
+                                    margin:10px;
+                                }
+        
+                                .is-link{
+                                    text-decoration: none;
+                                    box-sizing: border-box;
+                                    height: 35px;
+                                    line-height: 25px;
+                                    padding: 5px 10px;
+                                    max-width: 180px;
+                                    text-align: center;
+                                    background-color:$dodgerblue-dark-light;
+                                    color: rgb(255, 255, 255);
+                                    border-radius: 3px;
+                                    margin:0 10px;
+                                    position: relative;
+                                    z-index: 1;
+                                
+                                    i{
+                                        margin-left:20px;
+                                        color:rgb(255,255,255);
+                                    }
+                                }
+        
+                                .is-link:after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom:0;
+                                    left:0;
+                                    width: 100%;
+                                    height: 0;
+                                    background-color:$dodgerblue-dark;
+                                    transition-duration: $default-transition;
+                                    z-index: -1;
+                                    border-radius: 5px;
+                                }
+                            
+                                .is-link:hover:after{
+                                    height:100%;
+                                }
+                            }
+        
+                            .react-divcreator-sourcecode{
+                                border-radius:5px;
+                                background-color:$dark-background;
+                                box-sizing: border-box;
+                                padding:10px;
+                                margin:0 5px 20px;
+        
+                                .react-divcreator-sourcecode__single-line,
+                                .react-divcreator-sourcecode__pecial,
+                                .react-divcreator-sourcecode__span{
+                                    font-size:0.95rem;
+                                    font-weight: 400;
+                                    color:rgba(169,169,169,.9);
+                                }
+        
+                                .react-divcreator-sourcecode__showlines-ul-numbers-li{
+                                    text-align: center;
+        
+                                    .react-divcreator-sourcecode__showlines-ul-numbers-li-span{
+                                        line-height: 35px;
+                                    }
+        
+                                    .fa-npm{
+                                        font-size:1.2rem;
+                                        color:#F44559;
+                                    }
+                                    .fa-yarn{
+                                        font-size:1.2rem;
+                                        color:#2C8EBB;
+                                    }
+                                }
+                                .react-divcreator-sourcecode__showlines-ul-li-data{
+                                    padding-left:10px;
+        
+                                    .react-divcreator-sourcecode__type-space{
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+        
+                            .divcreator-code-example--installation{
+                                .react-divcreator-sourcecode__type-space{
+                                    display: none;
+                                }
+                            }
+        
+                            .element-p,
+                            .divcreator-sourcecode-example-p{
+                                font-size: 1rem;
+                                font-weight: 400;
+                                line-height: 1.75;
+                                letter-spacing: 0.01238em;
+                                padding-left:10px;
+                                margin:20px 0;
+                            }
+                        }
+                    }
+                }
+
+                .next-steps{
+                    @media screen and (min-width: $media-break){
+                        width: calc(100% - #{$menu-width});
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.react-divcreator-menu--vertical-click{
+    box-sizing: border-box;
+    padding:10px;
+}
+.react-divcreator-menu-fixed-left{
+    .react-divcreator-menu--vertical-click{
+        box-sizing: border-box;
+        padding:10px !important;
+
+        .parent{
+            box-sizing: border-box;
+    
+            .child-children{
+    
+                i{
+                    float:right;
+                    font-size:0.75rem;
+                    color: rgba(69, 69, 69, .54);
+                    margin-right:20px;
+                }
+    
+                .opened{
+                    i{
+                        transform: rotateZ(90deg);
+                    }
+                }
+            }
+        }
+        .parent{
+            .site-left.child-children{
+                padding-left:15px !important;
+
+                .react-divcreator-menu--vertical-click__single-text {
+                    padding-left:15px !important;
+                }
+            }
+        }
+    }
+}
+
+.header-title{
+    box-sizing: border-box;
+    padding:10px 20px;
+    border-bottom: 1px solid rgba(69,69,69,.1);
+    margin-bottom:10px;
+
+    h1{
+        color:rgba(0, 0, 0, .54) !important;
+        font-size: 1.2rem !important;
+        font-weight:500 !important;
+        box-sizing: border-box !important;
+        padding-bottom:15px !important;
+    }
+
+    .element-p{
+        box-sizing: border-box !important;
+        color: rgba(0, 0, 0, .54) !important;
+        font-weight: 400 !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+.react-divcreator-menu--vertical-click__single-text {
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 0.875rem !important;
+}
+.react-divcreator-menu--vertical-click__single-link {
+    background-color: transparent;
+    transition-duration: $default-transition;
+    border-radius:5px;
+}
+.react-divcreator-menu--vertical-click__single-link:hover{
+    background-color: rgba(222,222,222,.6);
+}
+
+.react-divcreator-menu--vertical-click__single-event{
+    span{
+        transition-duration: $default-transition;
+    }
+    .opened{
+        span{
+            font-weight: 600;
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+.boxes-menu-navigator{
+    position: fixed;
+    top:15px;
+    right:30px;
+    z-index:9;
+
+    .fas{
+        color:rgb(255,255,255);
+        font-size: 1.2rem;
+    }
+
+    .fa-times{
+        color:rgb(255,255,255);
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        margin:5px -3px;
+        line-height:15px;
+        background-color:$dodgerblue-dark;
+        border:1px solid transparent;
+        box-sizing: border-box;
+        padding:5px 10px;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:first-child{
+        margin-top:10px;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li,
+    .react-divcreator-box-menu__open__close--box-preview,
+    .react-divcreator-buttons-navigation__span{
+        transition-duration: 300ms;
+    }
+
+    .react-divcreator-box-menu__open__close--box-li{
+        .react-divcreator-box-menu__open__close--box-preview{
+            color:rgb(255,255,255);
+            white-space: nowrap;
+        }
+    }
+
+    .react-divcreator-box-menu__open__close--box-li:hover{
+        .react-divcreator-buttons-navigation__span{
+            text-decoration: underline;
+        }
+    }
+
+    .react-divcreator-buttons-navigation__span{
+        font-size: 0.789rem;
+    }
+}
+
+.website--components{
+    .menu-animation-custom{
+        padding: 2px 10px;
+        width: 170px;
+        margin: 5px 85px;
+
+        .text-icon{
+            font-size:1.08rem;
+            font-weight: 500;
+
+            .fas{
+                margin:15px;
+            }
+        }
+    }
+}
+
+.react-divcreator-slider-dots-ul-li{
+    width: 15px;
+    height:15px;
+}
+
+.react-divcreator-inputsuggestion{
+    border-radius: 5px;
+}
+.inputsuggestion-website{
+    position: absolute;
+    left:30px;
+    top:15px;
+    direction: ltr;
+    max-width:300px;
+    transition-duration: 300ms;
+    display: flex;
+    line-height:20px;
+
+    .react-divcreator-inputsuggestion__holder__single{
+        padding:0;
+        border:none;
+        position: relative;
+    }
+    
+    .react-divcreator-inputsuggestion__suggestions{
+        background-color:rgb(255,255,255);
+        overflow: hidden;
+    }
+
+    .react-divcreator-inputsuggestion__suggestions--holder{
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-inputsuggestion__input{
+        color:rgb(255,255,255);
+        font-size:0.95rem;
+        font-weight: 500;
+        line-height: 30px;
+        padding:4px 10px;
+        z-index:9;
+    }
+    .react-divcreator-inputsuggestion__suggestions{
+        z-index:9;
+    }
+
+    .fas{
+        line-height: 30px;
+        margin: 3px 10px 3px 0;
+        color:rgb(255,255,255);
+        font-size:0.95rem;
+    }
+}
+.inputsuggestion-website-home{
+    position: absolute;
+    left:120px;
+    top:15px;
+    direction: ltr;
+    max-width:300px;
+    transition-duration: 300ms;
+    display: flex;
+    line-height:20px;
+
+    .react-divcreator-inputsuggestion__holder__single{
+        padding:0;
+        border:none;
+        position: relative;
+    }
+    
+    .react-divcreator-inputsuggestion__suggestions{
+        background-color:rgb(255,255,255);
+        overflow: hidden;
+    }
+
+    .react-divcreator-inputsuggestion__suggestions--holder{
+        background-color:rgb(255,255,255);
+    }
+
+    .react-divcreator-inputsuggestion__input{
+        color:rgb(255,255,255);
+        font-size:0.95rem;
+        font-weight: 500;
+        line-height: 30px;
+        padding:4px 10px;
+        z-index:9;
+    }
+    .react-divcreator-inputsuggestion__suggestions{
+        z-index:9;
+    }
+
+    .fas{
+        line-height: 30px;
+        margin: 3px 10px 3px 0;
+        color:rgb(255,255,255);
+        font-size:0.95rem;
+    }
+}

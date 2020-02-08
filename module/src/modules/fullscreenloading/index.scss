@@ -1,0 +1,53 @@
+/*
+    ###########################################################
+    Fullscreenloading state
+    ###########################################################
+*/
+.react-divcreator-fullscreenloadingstate__child{
+    position: fixed;
+    z-index:99;
+    top: 0;
+    left: 0;
+    width:100vW;
+    height:100vH;
+    overflow: hidden;
+}
+.react-divcreator-fullscreenloading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vW;
+    height:100vH;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    text-align:center;
+    z-index:999;
+}
+.react-divcreator-fullscreenloading.animate{
+    $animation-time-fullscreenloading: 300ms;
+
+    @keyframes show-single-item-fullscreenloading {
+        from {
+            opacity:0;
+        }
+    
+        to {
+            opacity:1;
+        }
+    }
+    animation: show-single-item-fullscreenloading $animation-time-fullscreenloading ease-out forwards;
+}
+
+.react-divcreator-fullscreenloading img{
+    width:50px;
+    height:50px;
+    margin: 30px auto 30px auto;
+}
+
+.react-divcreator-fullscreenloadingstate__close{
+    position: absolute;
+    top:10px;
+    right:30px;
+}

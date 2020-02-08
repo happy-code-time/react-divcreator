@@ -1,0 +1,245 @@
+@import '../_declarations.scss';
+
+/*
+    HEADER
+*/
+.header--inside{
+    @media screen and (min-width: $media-break){
+        width: calc(100% - 240px);
+    }
+    width: 100%;
+    min-height:70px;
+    height:auto;
+    box-sizing: border-box;
+    padding:10px 10px 0 10px;
+    background-color: $dodgerblue-dark;
+    z-index:10;
+    box-shadow:0px 3px 5px rgba(69,69,69,.69);
+
+    .header-hamburger{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        line-height:40px;
+        text-align: center;
+        background-color:transparent;
+        transition-duration: $default-transition;
+        margin:5px 30px;
+
+        i{
+            margin:0 !important;
+        }
+    }
+
+    .header-hamburger:hover{
+        cursor: pointer;
+        background-color: rgba(69,69,69,.69);
+    }
+
+    .header-fixed-left-menu{
+        overflow-x:hidden;
+        
+        i{
+            font-size:1.2rem;
+            color:rgb(255,255,255);
+            margin:10px 30px;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+
+        .react-divcreator-menu-fixed-left__content{
+            width: 300px;
+            height: 100vH;
+            overflow-y: auto;
+            background-color:rgb(255,255,255);
+            padding:0;
+
+            .header-menu-vertical-click{
+                .react-divcreator-menu--vertical-click__single-text{
+                    color:rgba(0, 0, 0, .87);
+                }
+                .react-divcreator-menu--vertical-click__single-text:hover{
+                    cursor: pointer;
+                }
+
+                .parent{
+                    box-sizing: border-box;
+
+                    .child{
+                        display: inline-block;
+
+                        i{
+                            float:right;
+                            font-size:0.75rem;
+                            color: rgba(69, 69, 69, .54);
+                            margin-right:20px;
+                        }
+                    }
+                }
+
+                .react-divcreator-menu--vertical-click__custom-data{
+                    i{
+                        transition-duration: $default-transition;
+                        transform: rotateZ(0deg);
+                    }
+                }
+                .opened{
+                    transition-duration: $default-transition;
+                }
+                .react-divcreator-menu--vertical-click__custom-data.opened{
+                    i{
+                        transform: rotateZ(90deg);
+                    }
+                }
+                .react-divcreator-menu--vertical-click__single-event{
+                    display: block;
+                    transition-duration: $default-transition;
+                }
+
+                .react-divcreator-menu--vertical-click__single-event:hover{
+                    background-color: rgba(244,244,244,.6);
+                }
+                .react-divcreator-menu--vertical-click__single-event{
+                    .opened{
+                        span{
+                            font-size: 0.875rem;
+                            line-height: 1.75;
+                            color:rgba(0, 0, 0, 0.87);
+                        }
+                    }
+                }
+                .react-divcreator-menu--vertical-click__single-text{
+                    font-weight: 400;
+                    line-height: 1.75;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+    .menu-animation-custom{
+        float:right;
+        margin: -5px 25px;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        width: 170px;
+
+        .react-divcreator-menuanimation-icons--custom{
+            box-sizing: border-box;
+            padding:10px;
+    
+            .text-icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color:rgb(255,255,255);
+                font-size:0.9rem;
+                font-weight: 500;
+
+                span{
+                    display: block;
+                    color: inherit;
+                    font-size:0.95rem;
+                }
+
+                i{
+                    color: inherit;
+                    font-size:0.75rem;
+                    margin:2px 15px;
+                    transition-duration: $default-transition;
+                }
+            }
+        }
+        
+        .react-divcreator-menuanimation-icons--custom:hover{
+            cursor:pointer;
+        }
+    
+        .react-divcreator-accordion__single-content{
+            padding:10px 0;
+        }
+
+        .react-divcreator-menuanimation-custom{
+            width: 100%;
+            border-radius:5px;
+            display: inline-block;
+            position: relative;
+
+            .react-divcreator-menuanimation-icons--custom{
+                box-sizing: border-box;
+                padding:10px;
+                transition-duration: $default-transition;
+                background-color:transparent;
+                border-radius: 5px;
+            }
+
+            .react-divcreator-menuanimation-icons--custom:hover{
+                background-color: rgba(69,69,69,.69);
+            }
+    
+            .header-menu-animation{
+                background-color:rgb(255,255,255);            
+            }
+    
+            .react-divcreator-menuanimation-holder{
+                width: 150px;
+                padding:0;
+                min-height:50px;
+                box-shadow: 2px 3px 5px rgba(69,69,69,.69);
+
+                .react-divcreator-menuanimation-holder-accordion{
+                    padding:10px 0;
+                }
+    
+                .react-divcreator-accordion__single-content{
+                    width: 100%;
+                    padding:0px;
+
+                    .react-divcreator-accordion__single-accordion-element {
+                        background-color: transparent;
+                        transition-duration: $default-transition;
+                    }
+
+                    .react-divcreator-accordion__single-accordion-element:hover{
+                        background-color:$hover-gray-background;
+                    }
+
+                    .react-divcreator-accordion__single-title{
+                        padding:0;
+
+                        .custom-menu-animation-link{
+                            float:left;
+                            color: $dark-text;
+                            font-size:0.95rem;
+                            font-weight: 400;
+                            transition-duration: $default-transition;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding:10px;
+                            background-color: transparent;
+                        }
+
+                        .custom-menu-animation-link:hover{
+                            background-color: $hover-gray-background;
+                        }
+                    }
+                }
+            }
+        }
+
+        .react-divcreator-accordion,
+        .parent{
+            padding:0;
+        }
+    }
+    // Selected input suggestion
+    .react-divcreator-inputsuggestion__suggestions--single-suggestion{
+        border-radius:0px;
+    }
+    .selected{
+        background-color: $dodgerblue;
+        color:rgb(255,255,255);
+    }
+}

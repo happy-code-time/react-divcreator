@@ -1,0 +1,104 @@
+/*
+    Input list
+*/
+.react-divcreator-inputlist{
+    width: 100%;
+    clear: both;
+    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+
+    .responsive-li-title{
+        @media screen and (max-width: 1024px){
+            width: 100%;
+            display: block;
+            text-align:left;
+            box-sizing: border-box;
+            padding:5px;
+        }
+        display: none;
+    }
+    .responsive-li{
+        @media screen and (max-width: 1024px){
+            width: 100% !important;
+            flex-direction: row;
+            text-align: left;
+
+            *{
+                float:left;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .responsive-span{
+            @media screen and (max-width: 1024px){
+                display: inline-block;
+                opacity: 1;
+                position: static;
+                z-index:1;
+            }
+            display: none;
+            opacity: 0;
+            position: relative;
+            z-index:-1;
+        }
+    }
+    .responsive-ul{
+        @media screen and (max-width: 1024px){
+            flex-direction: column;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.react-divcreator-inputlist-header-ul{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.react-divcreator-inputlist-ul,
+.react-divcreator-inputlist-header-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align:left;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.react-divcreator-inputlist-ul-li,
+.react-divcreator-inputlist-header-ul-li{
+    float:left;
+    box-sizing: border-box;
+    padding:5px;
+    min-height:30px;
+    line-height:30px;
+}
+.react-divcreator-inputlist-header-ul-li{
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
+    display: block;
+}
+.react-divcreator-inputlist-header-ul-li:first-child{
+    @media screen and (max-width: 1024px){
+        display: block;
+    }
+    display: none;
+}
+
+.react-divcreator-inputlist-ul-li__p{
+    width: 100%;
+    text-align: left;
+    overflow-x:auto;
+}
+.react-divcreator-inputlist-ul-li__span,
+.responsive-span{
+    width: 100%;
+    text-align: left;
+    overflow-x:auto;
+}

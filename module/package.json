@@ -1,0 +1,80 @@
+{
+  "name": "react-divcreator",
+  "version": "2.0.15",
+  "description": "Create modern and interactive react websites modules!",
+  "main": "build/react-divcreator.js",
+  "scripts": {
+    "build": "webpack -p --mode production",
+    "build:dev": "node node_modules/webpack/bin/webpack.js --watch-poll --watch --progress --profile --colors"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^2.1.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.1"
+  },
+  "keywords": [
+    "Accordion",
+    "Articles",
+    "BoxBoxes",
+    "BoxMenu",
+    "BoxWindow",
+    "Breadcrumbs",
+    "Buttons",
+    "ButtonsNavigation",
+    "Cards",
+    "Cube",
+    "Dashboard",
+    "Divtriangle",
+    "Fullscreenloading",
+    "Image",
+    "Input",
+    "InputList",
+    "InputListSwitch",
+    "InputSuggestion",
+    "Links",
+    "List",
+    "MenuAnimationCustom",
+    "MenuAnimationDots",
+    "MenuAnimationHamburger",
+    "MenuAnimationSquare",
+    "MenuFixedBottom",
+    "MenuFixedLeft",
+    "MenuFixedRight",
+    "MenuFixedTop",
+    "MenuHorizontalClick",
+    "MenuHorizontalHover",
+    "MenuVerticalClick",
+    "MenuVerticalHover",
+    "Modal",
+    "Paging",
+    "Slider",
+    "Sourcecode",
+    "Stars",
+    "Verticalbars",
+    "Videobackground"
+  ],
+  "author": {
+    "name": "David Janitzek",
+    "email": "david.janitzek@gmail.com"
+  },
+  "license": "MIT"
+}

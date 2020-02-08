@@ -1,0 +1,199 @@
+/*
+    ###########################################################
+    Article
+    ###########################################################
+*/
+$animation-time-articles: 300ms;
+
+@keyframes show-single-articles-item {
+    from {
+        transition: $animation-time-articles;
+        transition-duration: $animation-time-articles;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+    }
+  
+    to {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+@keyframes hide-single-articles-item {
+    from {
+        transition: $animation-time-articles;
+        transition-duration: $animation-time-articles;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+  
+    to {
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+}
+/*
+    root article holder
+*/
+.react-divcreator-articles{
+    box-sizing: border-box;
+    max-width:100%;
+    min-height:100px;
+}
+.react-divcreator-articles-mounted{
+    .animate-y{
+        animation: show-single-articles-item $animation-time-articles ease-out forwards;
+        transition: $animation-time-articles;
+        transition-duration: $animation-time-articles;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 0% 0;
+        -webkit-transform-origin: 0% 0;
+    }   
+    .animation-y-back {
+        animation: hide-single-articles-item $animation-time-articles ease-out forwards;
+    }
+}
+/*
+    Article type image
+*/
+.react-divcreator-articles-image{
+    max-width:100%;
+    min-height:100px;
+    border-radius:2px;
+    box-shadow:1px 2px 5px rgba(69,69,69,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+/* main child 1 */
+.react-divcreator-articles-image--img{
+    float:left;
+    height:100%;
+    min-height:100px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    overflow:auto;
+    width:40%;
+}
+/* main child 2 */
+.react-divcreator-articles-image--content{
+    width:100%;
+    height:auto;
+    overflow:auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+/*
+    Article type click
+*/
+.react-divcreator-articles-click{
+    max-width:100%;
+    min-height:100px;
+    border-radius:2px;
+    box-shadow:1px 2px 5px rgba(69,69,69,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+.react-divcreator-articles-click--content{
+    width:100%;
+    height:auto;
+    overflow:auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+.react-divcreator-articles-click--content-to-toggle{
+    width:100%;
+    overflow:hidden;
+    box-sizing: border-box;
+    transition-duration: 500ms;
+}
+.react-divcreator-articles-toggle p{
+    box-sizing: border-box;
+    padding:0 10px;
+}
+.react-divcreator-articles-click--content-to-toggle--down{
+    height:auto;
+    overflow:auto;
+    padding:10px;
+}
+/*
+    Article type text
+*/
+.react-divcreator-articles-text{
+    max-width:100%;
+    min-height:100px;
+    border-radius:2px;
+    box-shadow:1px 2px 5px rgba(69,69,69,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+.react-divcreator-articles-text--content{
+    width:100%;
+    height:auto;
+    overflow:auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+.react-divcreator-articles-text--content-custom{
+    width:100%;
+    height:auto;
+    overflow:auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+/*
+    Article type image click
+*/
+.react-divcreator-articles-imageclick{
+    max-width:100%;
+    min-height:100px;
+    border-radius:2px;
+    box-shadow:1px 2px 5px rgba(69,69,69,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+/* main child 1 */
+.react-divcreator-articles-imageclick--img{
+    float:left;
+    height:100%;
+    min-height:100px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    overflow:auto;
+}
+/* main child 2 */
+.react-divcreator-articles-imageclick--content{
+    width:100%;
+    height:auto;
+    overflow:auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+.react-divcreator-articles-toggle{
+    height:auto;
+    overflow:auto;
+    padding:10px 0px;
+}

@@ -1,0 +1,159 @@
+/*
+    MENU ANIMATION 
+*/
+.react-divcreator-menuanimation-hamburger{
+    display: inline-block;
+    position: relative;
+    
+    @keyframes show-single-item-menu-animation-hamburger {
+        from {
+            opacity:0;
+            z-index:-1;
+        }
+      
+        to {
+            opacity:1;
+            z-index:2;
+        }
+    }
+    .react-divcreator-menuanimation-hamburger_items{
+        width:100%;
+        min-height:30px;
+        height:auto;
+        background:transparent;
+        position: absolute;
+        top:0;
+        z-index:9;
+    }
+
+    .rotate{
+        transform: rotateZ(180deg);
+    }
+
+    .react-divcreator-menuanimation-hamburger_items-animated{
+        position: absolute;
+    }
+    .react-divcreator-menuanimation-icons--hamburger{
+        width: 40px;
+        height: 32px;
+        background: transparent;
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        top: 3px;
+    }
+    .react-divcreator-menuanimation-icons--hamburger:hover{
+        cursor:pointer;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p{
+        width:25px !important;
+        height:1px !important;
+        padding:1px !important;
+        border-radius:5px !important;
+        background:rgb(222,222,222) !important;
+        line-height:10px !important;
+        margin:5px 5px !important;
+        opacity:1 !important;
+        transition-duration: 500ms !important;
+        position: relative !important;
+        z-index:1 !important;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p:first-child{
+        width:15px;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p:last-child{
+        width:10px;
+    }
+    .react-divcreator-menuanimation-icons--hamburger:hover .react-divcreator-menuanimation-icons--hamburger-p{
+        width:30px !important;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p-animation-1{
+        height:1px !important;
+        transform: rotateZ(45deg) !important;
+        width:25px !important;
+        margin-top:15px !important;
+        z-index:1 !important;
+        background:#444 !important;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p-animation-2{
+        opacity:0 !important;
+        z-index:1 !important;
+    }
+    .react-divcreator-menuanimation-icons--hamburger-p-animation-3{
+        height:1px !important;
+        transform: rotateZ(-45deg) !important;
+        width:25px !important;
+        margin-top:-16px !important;
+        z-index:1 !important;
+        background:#444 !important;
+    }
+    .react-divcreator-menuanimation-holder{
+        top:0px;
+        min-height: 100px;
+        height:auto;
+        overflow: hidden;
+        overflow-y:auto;
+        z-index:1;
+        transition-duration:500ms;
+        box-sizing: border-box;
+        padding:10px 20px;
+        opacity:0;
+        animation: show-single-item-menu-animation-hamburger 200ms ease-out forwards;
+    }
+    .react-divcreator-menuanimation-holder-accordion{
+        width: 100%;
+        overflow-y: auto;
+        overflow-x:hidden;
+        z-index:1;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        z-index:-1;
+    }
+    .react-divcreator-menuanimation-holder-accordion.header-menu-animation{
+        z-index:1;
+    }
+
+    .header-menu-animation{
+        z-index:-1;
+        opacity:0;
+        border-radius: 5px;
+        transition-duration: 200ms;
+        animation: show-single-item-menu-animation-hamburger 200ms ease-out forwards;
+    }
+    .react-divcreator-accordion {
+        position: relative;
+        z-index:1;
+        box-shadow: none;
+        overflow: visible;
+    }
+    .react-divcreator-accordion-entrypoint{
+        box-sizing: border-box;
+        width:100%;
+        padding:0;
+        box-sizing: border-box;
+        height:50px;
+        line-height:40px;
+        border-bottom:1px solid gray;
+        margin-left:20px;
+        height: auto;
+    }
+    .accordions-link{
+        position:relative;
+        text-decoration: none;
+        color:gray;
+        font-size:15px;
+        transition-duration:300ms;
+    }
+    .accordions-link:hover{
+        color:#003979;
+    }
+    .border{
+        border:1px solid rgba(99,99,99,0.5);
+        border-radius:50%;
+    }
+    a{
+        text-decoration: none;
+    }
+}

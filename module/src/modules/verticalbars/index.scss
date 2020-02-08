@@ -1,0 +1,44 @@
+/*
+    ###########################################################
+    Verticalbars
+    ###########################################################
+*/
+.react-divcreator-verticalbars{
+    max-width:100%;
+}
+.react-divcreator-verticalbars-entry{
+    width:100%;
+    height:40px;
+    background:rgba(99,99,99,.1);
+    line-height:40px;
+    position:relative;
+    margin-top:10px;
+}
+.react-divcreator-verticalbars-entry-title{
+    height: 100%;
+    float: left;
+    width:150px;
+    background: rgb(69, 69, 69);
+}
+.react-divcreator-verticalbars-entry-title-span{
+    margin-left:20px;
+    color:rgb(255,255,255);
+}
+.react-divcreator-verticalbars-entry-value-and-vector{
+    float:right;
+    height: 100%;
+    width:50px;
+}
+.react-divcreator-verticalbars-entry-value{
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+.react-divcreator-verticalbars-entry-vector{
+    float: left;
+    height: 100%;
+}
+.react-divcreator-verticalbars-animated-bar{
+    background:rgba(0,0,0,.1);
+    transition-duration: 1000ms;
+}

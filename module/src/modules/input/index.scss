@@ -1,0 +1,84 @@
+/* messages for input field */
+.react-divcreator-input-child{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.react-divcreator-input-input{
+    @media screen and (min-width: 1024px){
+        width: calc(100% - 100px);        
+    }
+    border: 1px solid rgba(69,69,69,.1);
+    border-radius: 3px;
+    min-height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: calc(100% - 50px);
+}
+.react-divcreator-input-icon{
+    @media screen and (min-width: 1024px){
+        width: 100px;            
+    }
+    width: 50px;
+    background-color: rgba(69,69,69,.1);
+    border-radius: 0px;
+}
+.react-divcreator-input-icon span{
+    display: block;
+    text-align:center;
+    line-height:50px;
+    color:rgb(69,69,69);
+}
+.react-divcreator-input-icon span:hover{
+    cursor: pointer;
+}
+.react-divcreator-input-error-messages,
+.react-divcreator-input-success-messages,
+.react-divcreator-input-warning-messages{
+    width:100%;
+    height:auto;
+    clear:both;
+    position: relative;
+    box-sizing: border-box;
+    padding:20px;
+}
+.react-divcreator-input-error-messages{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;   
+}
+.react-divcreator-input-success-messages{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.react-divcreator-input-warning-messages{
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.react-divcreator-input-error-messages__single-error__close,
+.react-divcreator-input-success-messages__single-success__close,
+.react-divcreator-input-warning-messages__single-warning__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color:
+    rgba(69,69,69,0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+.react-divcreator-input-error-messages__single-error__close:hover,
+.react-divcreator-input-success-messages__single-success__close:hover,
+.react-divcreator-input-warning-messages__single-warning__close:hover{
+    cursor:pointer;
+}
+.react-divcreator-input-error-messages_single-error{
+    color: #721c24;
+}
+.react-divcreator-input-success-messages_single-success{
+    color: #155724;
+}
+.react-divcreator-input-warning-messages_single-warning{
+    color: #856404;
+}

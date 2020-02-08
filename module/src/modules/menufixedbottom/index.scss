@@ -1,0 +1,90 @@
+$animation-time-menu-fixed-bottom: 300ms;
+
+@keyframes show-single-menu-fixed-bottom {
+    from {
+        transition: $animation-time-menu-fixed-bottom;
+        transition-duration: $animation-time-menu-fixed-bottom;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+@keyframes hide-single-menu-fixed-bottom {
+    from {
+        transition: $animation-time-menu-fixed-bottom;
+        transition-duration: $animation-time-menu-fixed-bottom;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+}
+
+@keyframes show-single-menu-fixed-bottom-height {
+    from {
+        bottom:-100%;
+    }
+
+    to {
+        bottom:0;
+    }
+}
+@keyframes hide-single-menu-fixed-bottom-height {
+    from {
+        bottom:0;
+    }
+
+    to {
+        bottom:-100%;
+    }
+}
+
+.react-divcreator-menu-fixed-bottom__content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999;
+    width: 100vW;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    padding:10px;
+    overflow-y:auto;
+}
+.react-divcreator-menu-fixed-bottom__content--dimmed{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vW;
+    height:100vH;
+    background-color:rgba(69,69,69,.5);
+    z-index: 999999;
+}
+.react-divcreator-menu-fixed-bottom__content--animation{
+    animation: show-single-menu-fixed-bottom $animation-time-menu-fixed-bottom ease-out forwards;
+    transition: $animation-time-menu-fixed-bottom;
+    transition-duration: $animation-time-menu-fixed-bottom;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+.react-divcreator-menu-fixed-bottom__content--animation-back{
+    animation: hide-single-menu-fixed-bottom $animation-time-menu-fixed-bottom ease-out forwards;
+}
+
+.react-divcreator-menu-fixed-bottom__content--animation--height{
+    animation: show-single-menu-fixed-bottom-height $animation-time-menu-fixed-bottom ease-out forwards;
+    transition: $animation-time-menu-fixed-bottom;
+    transition-duration: $animation-time-menu-fixed-bottom;
+    bottom:-100%;
+}
+.react-divcreator-menu-fixed-bottom__content--animation--height-back{
+    animation: hide-single-menu-fixed-bottom-height $animation-time-menu-fixed-bottom ease-out forwards;
+}

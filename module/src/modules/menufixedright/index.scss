@@ -1,0 +1,104 @@
+$animation-time-menu-fixed-right: 300ms;
+
+@keyframes show-single-menu-fixed-right {
+    from {
+        transition: $animation-time-menu-fixed-right;
+        transition-duration: $animation-time-menu-fixed-right;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+@keyframes hide-single-menu-fixed-right {
+    from {
+        transition: $animation-time-menu-fixed-right;
+        transition-duration: $animation-time-menu-fixed-right;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+}
+
+@keyframes hide-single-menu-fixed-left {
+    from {
+        transition: $animation-time-menu-fixed-left;
+        transition-duration: $animation-time-menu-fixed-left;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+}
+
+@keyframes show-single-menu-fixed-right-width {
+    from {
+        right:-100%;
+    }
+
+    to {
+        right:0px;
+    }
+}
+@keyframes hide-single-menu-fixed-right-width {
+    from {
+        right:0px;
+    }
+
+    to {
+        right:-100%;
+    }
+}
+
+.react-divcreator-menu-fixed-right__content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    height: 100vH;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    padding:10px;
+    overflow-y:auto;
+}
+.react-divcreator-menu-fixed-right__content--dimmed{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vW;
+    height:100vH;
+    background-color:rgba(69,69,69,.5);
+    z-index: 999999;
+}
+.react-divcreator-menu-fixed-right__content--animation{
+    animation: show-single-menu-fixed-right $animation-time-menu-fixed-right ease-out forwards;
+    transition: $animation-time-menu-fixed-right;
+    transition-duration: $animation-time-menu-fixed-right;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: 100% 0;
+    -webkit-transform-origin: 100% 0;
+}
+.react-divcreator-menu-fixed-right__content--animation-back{
+    animation: hide-single-menu-fixed-right $animation-time-menu-fixed-right ease-out forwards;
+}
+
+.react-divcreator-menu-fixed-right__content--animation--width{
+    animation: show-single-menu-fixed-right-width $animation-time-menu-fixed-right ease-out forwards;
+    transition: $animation-time-menu-fixed-right;
+    transition-duration: $animation-time-menu-fixed-right;
+    right:-100%;
+}
+.react-divcreator-menu-fixed-right__content--animation--width-back{
+    animation: hide-single-menu-fixed-right-width $animation-time-menu-fixed-right ease-out forwards;
+}
