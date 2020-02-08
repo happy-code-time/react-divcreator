@@ -1,4 +1,9 @@
-# React divcreator website + module
+## **React divcreator** module and website
+
+## Any change or improvement is welcome. 
+## Start the React Divcreator team now. All names of the helping developers will of course be published. Implement your cool and innovative ideas using a branch or make a pull request. 
+
+## I'm waiting for you and for changes! Together we will develop the best module for the whole world!
 
 ### To run the websites code
 
