@@ -8,54 +8,6 @@ const naviagateToTop = (clickEvent, customData) => {
 
 const website404Data = [
     {
-        description: 'Example with the type: "fire". This example has the key: bad={false}',
-        html: (
-            <span className="website-404-span">
-                <Website404
-                    type='fire'
-                    width='100%'
-                    height='100%'
-                    link={false}
-                    href={window.location.href}
-                    text={
-                        (
-                            <span>
-                                Go to homepage
-                            </span>
-                        )
-                    }
-                    attributes={
-                        {
-                            title: 'Navigate to the homepage'
-                        }
-                    }
-                    function={naviagateToTop}
-                    bad={false}
-                />
-            </span>
-        ),
-        cssCode: (
-`.website-404-span{
-    display:block;
-    width:100%;
-}`
-        ),
-        reactCode: (
-`import { Website404 } from 'react-divcreator';
-
-<span className="website-404-span">
-    <Website404
-
-    />
-</span>`
-        ),
-        jsCode: (
-`const naviagateToTop = (clickEvent, customData) => {
-    window.scrollTo(0,0);
-}`
-        )
-    },
-    {
         description: 'Example with the type: "clouds". This example has the key: bad={true}',
         html: (
             <span className="website-404-span">
@@ -111,6 +63,7 @@ const website404Data = [
             }
         }
         function={naviagateToTop}
+        bad={true}
     />
 </span>`
         ),
@@ -176,6 +129,7 @@ const website404Data = [
             }
         }
         function={naviagateToTop}
+        bad={false}
     />
 </span>`
         ),
@@ -250,9 +204,9 @@ const website404Keys = [
     },
     {
         key: 'bad',
-        description: 'If true then: On the type "type" draw bad clouds with bolt`s. On the type "water" draw the fishes in color red. Default value: false.',
+        description: 'If true then: On the type "type" draw bad clouds with bolt`s. On the type "water" draw the fishes in red color. Default value: false.',
         type: 'Boolean'
-    },
+    }
 ]
 
 export {

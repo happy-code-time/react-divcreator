@@ -121,32 +121,30 @@ class footer extends Component {
                                             <p className='divcreator-sourcecode-example-p'>
                                                 Useful links.
                                             </p>
-                                            <Link
-                                                to='/documentation'
+                                            <a
+                                                href='https://github.com/janitzed/react-divcreator'
                                                 className="is-link"
-                                                title='Navigate to the documenation website'
-                                                onClick={navigateToTopOfWebpage}
+                                                target='_blank'
                                             >
                                                 {
                                                     <span>
-                                                        Documenation
+                                                        GIT
                                                         <i className="fas fa-external-link-square-alt"></i>
                                                     </span>
                                                 }
-                                            </Link>
-                                            <Link
-                                                to='/components/accordion'
+                                            </a>
+                                            <a
+                                                href='https://www.npmjs.com/package/react-divcreator'
                                                 className="is-link"
-                                                title='Navigate to the first component website'
-                                                onClick={navigateToTopOfWebpage}
+                                                target='_blank'
                                             >
                                                 {
                                                     <span>
-                                                        Components
+                                                        NPM
                                                         <i className="fas fa-external-link-square-alt"></i>
                                                     </span>
                                                 }
-                                            </Link>
+                                            </a>
                                         </div>
                                     )
                                 },

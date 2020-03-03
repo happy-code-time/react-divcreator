@@ -6,6 +6,8 @@
 
 ## [Documentation](http://react-divcreator.cba.pl/#/documentation)
 
+## [NPM](https://github.com/janitzed/react-divcreator) 
+
 # Available types
     
 - [Accordion](http://react-divcreator.cba.pl/#/components/accordion)
@@ -96,6 +98,7 @@
 
 - [Videobackground](http://react-divcreator.cba.pl/#/components/videobackground)
 
+- [website404](http://react-divcreator.cba.pl/#/components/website404)
 
 # [Changelog](http://react-divcreator.cba.pl/#/changelog)
 

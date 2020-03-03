@@ -4,15 +4,11 @@ import checkRequiredProps from '../funtions/checkRequiredProperties';
 
 import missingKeyOrInvalidType from '../funtions/missingKeyOrType';
 
-import customKey from '../funtions/customKey';
-
 import { logBuildTime } from '../funtions/logBuildTime';
 
 import Clouds from './pages/clouds';
 
 import Water from './pages/water';
-
-import Fire from './pages/fire';
 
 class website404 extends React.Component {
     constructor(props) {
@@ -48,13 +44,6 @@ class website404 extends React.Component {
                     case 'water' : {
                         return (
                             <Water 
-                                props={this.props} 
-                            />
-                        );
-                    }
-                    case 'fire' : {
-                        return (
-                            <Fire 
                                 props={this.props} 
                             />
                         );

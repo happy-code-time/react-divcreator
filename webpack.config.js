@@ -33,15 +33,15 @@ module.exports = {
             }),
         ],
         // Production
-        // splitChunks: {
-        //     cacheGroups: {
-        //         commons: {
-        //             test: /[\\/]node_modules[\\/]/,
-        //             name: 'vendors',
-        //             chunks: 'all'
-        //         }
-        //     }
-        // }
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all'
+                }
+            }
+        }
     },
     devtool: 'source-map',
     resolve: {
@@ -96,7 +96,7 @@ module.exports = {
         ]
     },
     // Production
-    // plugins: [
-    //     new MinifyPlugin()
-    // ]
+    plugins: [
+        new MinifyPlugin()
+    ]
 };
